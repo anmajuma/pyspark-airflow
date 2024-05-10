@@ -1,0 +1,11 @@
+docker cp /home/animesh/pysparketlframework/dq/gedq/dist/gedq-0.1-py3-none-any.whl spark-master:/opt/spark-whls/gedq-0.1-py3-none-any.whl
+
+virtualenv airflow_env
+docker network create -d bridge wba-network
+docker build -f Dockerfile.spark -t wba-demo/spark:latest .
+docker build -f Dockerfile.airflow -t wba-demo/airflow:latest .
+docker compose up
+docker compose -f docker-compose-airflow-spark.yaml up
+
+docker-compose up airflow-init
+docker-compose up --scale spark-worker=3 -d

@@ -1,0 +1,42 @@
+[2024-05-09T22:03:19.276+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pyspark_dag.spark_submit manual__2024-05-09T22:02:59.526341+00:00 [queued]>
+[2024-05-09T22:03:19.285+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pyspark_dag.spark_submit manual__2024-05-09T22:02:59.526341+00:00 [queued]>
+[2024-05-09T22:03:19.285+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2024-05-09T22:03:19.299+0000] {taskinstance.py:1382} INFO - Executing <Task(SSHOperator): spark_submit> on 2024-05-09 22:02:59.526341+00:00
+[2024-05-09T22:03:19.304+0000] {standard_task_runner.py:57} INFO - Started process 2590 to run task
+[2024-05-09T22:03:19.307+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'pyspark_dag', 'spark_submit', 'manual__2024-05-09T22:02:59.526341+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/dag_spark.py', '--cfg-path', '/tmp/tmpd5ik9wl8']
+[2024-05-09T22:03:19.309+0000] {standard_task_runner.py:85} INFO - Job 54: Subtask spark_submit
+[2024-05-09T22:03:19.360+0000] {task_command.py:416} INFO - Running <TaskInstance: pyspark_dag.spark_submit manual__2024-05-09T22:02:59.526341+00:00 [running]> on host 6497c78995dd
+[2024-05-09T22:03:19.642+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pyspark_dag' AIRFLOW_CTX_TASK_ID='spark_submit' AIRFLOW_CTX_EXECUTION_DATE='2024-05-09T22:02:59.526341+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-05-09T22:02:59.526341+00:00'
+[2024-05-09T22:03:19.651+0000] {ssh.py:141} INFO - Creating ssh_client
+[2024-05-09T22:03:19.652+0000] {ssh.py:114} INFO - ssh_hook is not provided or invalid. Trying ssh_conn_id to create SSHHook.
+[2024-05-09T22:03:19.694+0000] {base.py:73} INFO - Using connection ID 'ssh_spark' for task execution.
+[2024-05-09T22:03:19.695+0000] {ssh.py:300} WARNING - No Host Key Verification. This won't protect against Man-In-The-Middle attacks
+[2024-05-09T22:03:19.696+0000] {ssh.py:342} INFO - Failed to connect. Sleeping before retry attempt 1
+[2024-05-09T22:03:23.157+0000] {ssh.py:342} INFO - Failed to connect. Sleeping before retry attempt 2
+[2024-05-09T22:03:27.522+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/ssh/operators/ssh.py", line 177, in execute
+    with self.get_ssh_client() as ssh_client:
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/ssh/operators/ssh.py", line 142, in get_ssh_client
+    return self.hook.get_conn()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/ssh/hooks/ssh.py", line 346, in get_conn
+    for attempt in Retrying(
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 347, in __iter__
+    do = self.iter(retry_state=retry_state)
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 325, in iter
+    raise retry_exc.reraise()
+  File "/home/airflow/.local/lib/python3.8/site-packages/tenacity/__init__.py", line 158, in reraise
+    raise self.last_attempt.result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 437, in result
+    return self.__get_result()
+  File "/usr/local/lib/python3.8/concurrent/futures/_base.py", line 389, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/ssh/hooks/ssh.py", line 353, in get_conn
+    client.connect(**connect_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/paramiko/client.py", line 409, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 172.22.0.7
+[2024-05-09T22:03:27.545+0000] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=pyspark_dag, task_id=spark_submit, execution_date=20240509T220259, start_date=20240509T220319, end_date=20240509T220327
+[2024-05-09T22:03:27.563+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 54 for task spark_submit ([Errno None] Unable to connect to port 22 on 172.22.0.7; 2590)
+[2024-05-09T22:03:27.577+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-05-09T22:03:27.604+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

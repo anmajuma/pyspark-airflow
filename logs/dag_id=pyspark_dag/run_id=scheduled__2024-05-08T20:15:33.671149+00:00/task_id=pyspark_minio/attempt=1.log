@@ -1,0 +1,205 @@
+[2024-05-09T20:15:49.601+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pyspark_dag.pyspark_minio scheduled__2024-05-08T20:15:33.671149+00:00 [queued]>
+[2024-05-09T20:15:49.623+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pyspark_dag.pyspark_minio scheduled__2024-05-08T20:15:33.671149+00:00 [queued]>
+[2024-05-09T20:15:49.624+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2024-05-09T20:15:49.655+0000] {taskinstance.py:1382} INFO - Executing <Task(DockerOperator): pyspark_minio> on 2024-05-08 20:15:33.671149+00:00
+[2024-05-09T20:15:49.666+0000] {standard_task_runner.py:57} INFO - Started process 654 to run task
+[2024-05-09T20:15:49.671+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'pyspark_dag', 'pyspark_minio', 'scheduled__2024-05-08T20:15:33.671149+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/dag_spark.py', '--cfg-path', '/tmp/tmpiqf91o_a']
+[2024-05-09T20:15:49.674+0000] {standard_task_runner.py:85} INFO - Job 9: Subtask pyspark_minio
+[2024-05-09T20:15:49.757+0000] {task_command.py:416} INFO - Running <TaskInstance: pyspark_dag.pyspark_minio scheduled__2024-05-08T20:15:33.671149+00:00 [running]> on host ef6abd42a040
+[2024-05-09T20:15:49.917+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pyspark_dag' AIRFLOW_CTX_TASK_ID='pyspark_minio' AIRFLOW_CTX_EXECUTION_DATE='2024-05-08T20:15:33.671149+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-05-08T20:15:33.671149+00:00'
+[2024-05-09T20:15:49.955+0000] {docker.py:343} INFO - Starting docker container from image wba-demo/spark:latest
+[2024-05-09T20:15:49.960+0000] {docker.py:351} WARNING - Using remote engine or docker-in-docker and mounting temporary volume from host is not supported. Falling back to `mount_tmp_dir=False` mode. You can set `mount_tmp_dir` parameter to False to disable mounting and remove the warning
+[2024-05-09T20:15:51.078+0000] {docker.py:413} INFO - [38;5;6mspark [38;5;5m20:15:51.07 [0m[38;5;2mINFO [0m ==>
+[2024-05-09T20:15:51.084+0000] {docker.py:413} INFO - [38;5;6mspark [38;5;5m20:15:51.07 [0m[38;5;2mINFO [0m ==> [1mWelcome to the Bitnami spark container[0m
+[2024-05-09T20:15:51.088+0000] {docker.py:413} INFO - [38;5;6mspark [38;5;5m20:15:51.08 [0m[38;5;2mINFO [0m ==> Subscribe to project updates by watching [1mhttps://github.com/bitnami/containers[0m
+[2024-05-09T20:15:51.091+0000] {docker.py:413} INFO - [38;5;6mspark [38;5;5m20:15:51.09 [0m[38;5;2mINFO [0m ==> Submit issues and feature requests at [1mhttps://github.com/bitnami/containers/issues[0m
+[2024-05-09T20:15:51.100+0000] {docker.py:413} INFO - [38;5;6mspark [38;5;5m20:15:51.09 [0m[38;5;2mINFO [0m ==>
+[2024-05-09T20:15:51.114+0000] {docker.py:413} INFO - 
+[2024-05-09T20:15:58.566+0000] {docker.py:413} INFO - :: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[2024-05-09T20:15:58.934+0000] {docker.py:413} INFO - Ivy Default Cache set to: /opt/bitnami/spark/.ivy2/cache
+[2024-05-09T20:15:58.935+0000] {docker.py:413} INFO - The jars for the packages stored in: /opt/bitnami/spark/.ivy2/jars
+[2024-05-09T20:15:58.983+0000] {docker.py:413} INFO - io.delta#delta-core_2.12 added as a dependency
+org.apache.hadoop#hadoop-aws added as a dependency
+[2024-05-09T20:15:58.990+0000] {docker.py:413} INFO - :: resolving dependencies :: org.apache.spark#spark-submit-parent-eae149de-7d43-4175-b810-6853196c0b1f;1.0
+	confs: [default]
+[2024-05-09T20:16:02.390+0000] {docker.py:413} INFO - found io.delta#delta-core_2.12;2.4.0 in central
+[2024-05-09T20:16:02.914+0000] {docker.py:413} INFO - found io.delta#delta-storage;2.4.0 in central
+[2024-05-09T20:16:07.023+0000] {docker.py:413} INFO - found org.antlr#antlr4-runtime;4.9.3 in central
+[2024-05-09T20:16:12.385+0000] {docker.py:413} INFO - found org.apache.hadoop#hadoop-aws;3.3.6 in central
+[2024-05-09T20:16:14.755+0000] {docker.py:413} INFO - found com.amazonaws#aws-java-sdk-bundle;1.12.367 in central
+[2024-05-09T20:16:19.126+0000] {docker.py:413} INFO - found org.wildfly.openssl#wildfly-openssl;1.1.3.Final in central
+[2024-05-09T20:16:19.369+0000] {docker.py:413} INFO - downloading https://repo1.maven.org/maven2/io/delta/delta-core_2.12/2.4.0/delta-core_2.12-2.4.0.jar ...
+[2024-05-09T20:16:21.881+0000] {docker.py:413} INFO - [SUCCESSFUL ] io.delta#delta-core_2.12;2.4.0!delta-core_2.12.jar (2737ms)
+[2024-05-09T20:16:22.103+0000] {docker.py:413} INFO - downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.6/hadoop-aws-3.3.6.jar ...
+[2024-05-09T20:16:22.798+0000] {docker.py:413} INFO - [SUCCESSFUL ] org.apache.hadoop#hadoop-aws;3.3.6!hadoop-aws.jar (915ms)
+[2024-05-09T20:16:23.129+0000] {docker.py:413} INFO - downloading https://repo1.maven.org/maven2/io/delta/delta-storage/2.4.0/delta-storage-2.4.0.jar ...
+[2024-05-09T20:16:23.367+0000] {docker.py:413} INFO - [SUCCESSFUL ] io.delta#delta-storage;2.4.0!delta-storage.jar (565ms)
+[2024-05-09T20:16:23.597+0000] {docker.py:413} INFO - downloading https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar ...
+[2024-05-09T20:16:23.974+0000] {docker.py:413} INFO - [SUCCESSFUL ] org.antlr#antlr4-runtime;4.9.3!antlr4-runtime.jar (600ms)
+[2024-05-09T20:16:24.201+0000] {docker.py:413} INFO - downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.367/aws-java-sdk-bundle-1.12.367.jar ...
+[2024-05-09T20:19:09.803+0000] {docker.py:413} INFO - [SUCCESSFUL ] com.amazonaws#aws-java-sdk-bundle;1.12.367!aws-java-sdk-bundle.jar (165816ms)
+[2024-05-09T20:19:10.035+0000] {docker.py:413} INFO - downloading https://repo1.maven.org/maven2/org/wildfly/openssl/wildfly-openssl/1.1.3.Final/wildfly-openssl-1.1.3.Final.jar ...
+[2024-05-09T20:19:10.339+0000] {docker.py:413} INFO - [SUCCESSFUL ] org.wildfly.openssl#wildfly-openssl;1.1.3.Final!wildfly-openssl.jar (522ms)
+[2024-05-09T20:19:10.369+0000] {docker.py:413} INFO - :: resolution report :: resolve 20153ms :: artifacts dl 171226ms
+[2024-05-09T20:19:10.370+0000] {docker.py:413} INFO - :: modules in use:
+[2024-05-09T20:19:10.371+0000] {docker.py:413} INFO - com.amazonaws#aws-java-sdk-bundle;1.12.367 from central in [default]
+[2024-05-09T20:19:10.371+0000] {docker.py:413} INFO - io.delta#delta-core_2.12;2.4.0 from central in [default]
+[2024-05-09T20:19:10.372+0000] {docker.py:413} INFO - io.delta#delta-storage;2.4.0 from central in [default]
+[2024-05-09T20:19:10.372+0000] {docker.py:413} INFO - org.antlr#antlr4-runtime;4.9.3 from central in [default]
+[2024-05-09T20:19:10.376+0000] {docker.py:413} INFO - org.apache.hadoop#hadoop-aws;3.3.6 from central in [default]
+	org.wildfly.openssl#wildfly-openssl;1.1.3.Final from central in [default]
+[2024-05-09T20:19:10.376+0000] {docker.py:413} INFO - ---------------------------------------------------------------------
+[2024-05-09T20:19:10.379+0000] {docker.py:413} INFO - |                  |            modules            ||   artifacts   |
+[2024-05-09T20:19:10.379+0000] {docker.py:413} INFO - |       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+[2024-05-09T20:19:10.380+0000] {docker.py:413} INFO - |      default     |   6   |   6   |   6   |   0   ||   6   |   6   |
+[2024-05-09T20:19:10.380+0000] {docker.py:413} INFO - ---------------------------------------------------------------------
+[2024-05-09T20:19:10.408+0000] {docker.py:413} INFO - :: retrieving :: org.apache.spark#spark-submit-parent-eae149de-7d43-4175-b810-6853196c0b1f
+[2024-05-09T20:19:10.409+0000] {docker.py:413} INFO - confs: [default]
+[2024-05-09T20:19:11.518+0000] {docker.py:413} INFO - 6 artifacts copied, 0 already retrieved (309034kB/1109ms)
+[2024-05-09T20:19:12.628+0000] {docker.py:413} INFO - 24/05/09 20:19:12 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2024-05-09T20:19:16.958+0000] {docker.py:413} INFO - 24/05/09 20:19:16 INFO SparkContext: Running Spark version 3.4.1
+[2024-05-09T20:19:17.098+0000] {docker.py:413} INFO - 24/05/09 20:19:17 INFO ResourceUtils: ==============================================================
+24/05/09 20:19:17 INFO ResourceUtils: No custom resources configured for spark.driver.
+[2024-05-09T20:19:17.102+0000] {docker.py:413} INFO - 24/05/09 20:19:17 INFO ResourceUtils: ==============================================================
+[2024-05-09T20:19:17.108+0000] {docker.py:413} INFO - 24/05/09 20:19:17 INFO SparkContext: Submitted application: CSV File to Delta Lake Table
+[2024-05-09T20:19:17.236+0000] {docker.py:413} INFO - 24/05/09 20:19:17 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2024-05-09T20:19:17.320+0000] {docker.py:413} INFO - 24/05/09 20:19:17 INFO ResourceProfile: Limiting resource is cpu
+[2024-05-09T20:19:17.332+0000] {docker.py:413} INFO - 24/05/09 20:19:17 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2024-05-09T20:19:17.768+0000] {docker.py:413} INFO - 24/05/09 20:19:17 INFO SecurityManager: Changing view acls to: spark
+[2024-05-09T20:19:17.768+0000] {docker.py:413} INFO - 24/05/09 20:19:17 INFO SecurityManager: Changing modify acls to: spark
+[2024-05-09T20:19:17.769+0000] {docker.py:413} INFO - 24/05/09 20:19:17 INFO SecurityManager: Changing view acls groups to:
+[2024-05-09T20:19:17.769+0000] {docker.py:413} INFO - 24/05/09 20:19:17 INFO SecurityManager: Changing modify acls groups to:
+[2024-05-09T20:19:17.770+0000] {docker.py:413} INFO - 24/05/09 20:19:17 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark; groups with view permissions: EMPTY; users with modify permissions: spark; groups with modify permissions: EMPTY
+[2024-05-09T20:19:18.642+0000] {docker.py:413} INFO - 24/05/09 20:19:18 INFO Utils: Successfully started service 'sparkDriver' on port 34809.
+[2024-05-09T20:19:18.797+0000] {docker.py:413} INFO - 24/05/09 20:19:18 INFO SparkEnv: Registering MapOutputTracker
+[2024-05-09T20:19:18.871+0000] {docker.py:413} INFO - 24/05/09 20:19:18 INFO SparkEnv: Registering BlockManagerMaster
+[2024-05-09T20:19:18.918+0000] {docker.py:413} INFO - 24/05/09 20:19:18 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2024-05-09T20:19:18.921+0000] {docker.py:413} INFO - 24/05/09 20:19:18 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2024-05-09T20:19:18.935+0000] {docker.py:413} INFO - 24/05/09 20:19:18 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2024-05-09T20:19:19.004+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-b4b8ebaa-9509-4d3c-9ea7-f1ae78f60c11
+[2024-05-09T20:19:19.058+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2024-05-09T20:19:19.104+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO SparkEnv: Registering OutputCommitCoordinator
+[2024-05-09T20:19:19.502+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[2024-05-09T20:19:19.649+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2024-05-09T20:19:19.757+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO SparkContext: Added JAR file:///opt/bitnami/spark/.ivy2/jars/io.delta_delta-core_2.12-2.4.0.jar at spark://localhost:34809/jars/io.delta_delta-core_2.12-2.4.0.jar with timestamp 1715285956920
+[2024-05-09T20:19:19.759+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO SparkContext: Added JAR file:///opt/bitnami/spark/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.6.jar at spark://localhost:34809/jars/org.apache.hadoop_hadoop-aws-3.3.6.jar with timestamp 1715285956920
+[2024-05-09T20:19:19.769+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO SparkContext: Added JAR file:///opt/bitnami/spark/.ivy2/jars/io.delta_delta-storage-2.4.0.jar at spark://localhost:34809/jars/io.delta_delta-storage-2.4.0.jar with timestamp 1715285956920
+24/05/09 20:19:19 INFO SparkContext: Added JAR file:///opt/bitnami/spark/.ivy2/jars/org.antlr_antlr4-runtime-4.9.3.jar at spark://localhost:34809/jars/org.antlr_antlr4-runtime-4.9.3.jar with timestamp 1715285956920
+[2024-05-09T20:19:19.770+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO SparkContext: Added JAR file:///opt/bitnami/spark/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar at spark://localhost:34809/jars/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar with timestamp 1715285956920
+[2024-05-09T20:19:19.772+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO SparkContext: Added JAR file:///opt/bitnami/spark/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar at spark://localhost:34809/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar with timestamp 1715285956920
+[2024-05-09T20:19:19.789+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO SparkContext: Added file file:///opt/bitnami/spark/.ivy2/jars/io.delta_delta-core_2.12-2.4.0.jar at file:///opt/bitnami/spark/.ivy2/jars/io.delta_delta-core_2.12-2.4.0.jar with timestamp 1715285956920
+[2024-05-09T20:19:19.792+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO Utils: Copying /opt/bitnami/spark/.ivy2/jars/io.delta_delta-core_2.12-2.4.0.jar to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/io.delta_delta-core_2.12-2.4.0.jar
+[2024-05-09T20:19:19.851+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO SparkContext: Added file file:///opt/bitnami/spark/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.6.jar at file:///opt/bitnami/spark/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.6.jar with timestamp 1715285956920
+[2024-05-09T20:19:19.851+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO Utils: Copying /opt/bitnami/spark/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.6.jar to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/org.apache.hadoop_hadoop-aws-3.3.6.jar
+[2024-05-09T20:19:19.877+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO SparkContext: Added file file:///opt/bitnami/spark/.ivy2/jars/io.delta_delta-storage-2.4.0.jar at file:///opt/bitnami/spark/.ivy2/jars/io.delta_delta-storage-2.4.0.jar with timestamp 1715285956920
+[2024-05-09T20:19:19.878+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO Utils: Copying /opt/bitnami/spark/.ivy2/jars/io.delta_delta-storage-2.4.0.jar to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/io.delta_delta-storage-2.4.0.jar
+[2024-05-09T20:19:19.899+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO SparkContext: Added file file:///opt/bitnami/spark/.ivy2/jars/org.antlr_antlr4-runtime-4.9.3.jar at file:///opt/bitnami/spark/.ivy2/jars/org.antlr_antlr4-runtime-4.9.3.jar with timestamp 1715285956920
+[2024-05-09T20:19:19.904+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO Utils: Copying /opt/bitnami/spark/.ivy2/jars/org.antlr_antlr4-runtime-4.9.3.jar to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/org.antlr_antlr4-runtime-4.9.3.jar
+[2024-05-09T20:19:19.914+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO SparkContext: Added file file:///opt/bitnami/spark/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar at file:///opt/bitnami/spark/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar with timestamp 1715285956920
+[2024-05-09T20:19:19.915+0000] {docker.py:413} INFO - 24/05/09 20:19:19 INFO Utils: Copying /opt/bitnami/spark/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar
+[2024-05-09T20:19:20.442+0000] {docker.py:413} INFO - 24/05/09 20:19:20 INFO SparkContext: Added file file:///opt/bitnami/spark/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar at file:///opt/bitnami/spark/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar with timestamp 1715285956920
+[2024-05-09T20:19:20.443+0000] {docker.py:413} INFO - 24/05/09 20:19:20 INFO Utils: Copying /opt/bitnami/spark/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar
+[2024-05-09T20:19:20.651+0000] {docker.py:413} INFO - 24/05/09 20:19:20 INFO Executor: Starting executor ID driver on host localhost
+[2024-05-09T20:19:20.666+0000] {docker.py:413} INFO - 24/05/09 20:19:20 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+[2024-05-09T20:19:20.701+0000] {docker.py:413} INFO - 24/05/09 20:19:20 INFO Executor: Fetching file:///opt/bitnami/spark/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.6.jar with timestamp 1715285956920
+[2024-05-09T20:19:20.817+0000] {docker.py:413} INFO - 24/05/09 20:19:20 INFO Utils: /opt/bitnami/spark/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.6.jar has been previously copied to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/org.apache.hadoop_hadoop-aws-3.3.6.jar
+[2024-05-09T20:19:20.856+0000] {docker.py:413} INFO - 24/05/09 20:19:20 INFO Executor: Fetching file:///opt/bitnami/spark/.ivy2/jars/io.delta_delta-core_2.12-2.4.0.jar with timestamp 1715285956920
+[2024-05-09T20:19:20.904+0000] {docker.py:413} INFO - 24/05/09 20:19:20 INFO Utils: /opt/bitnami/spark/.ivy2/jars/io.delta_delta-core_2.12-2.4.0.jar has been previously copied to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/io.delta_delta-core_2.12-2.4.0.jar
+[2024-05-09T20:19:20.935+0000] {docker.py:413} INFO - 24/05/09 20:19:20 INFO Executor: Fetching file:///opt/bitnami/spark/.ivy2/jars/io.delta_delta-storage-2.4.0.jar with timestamp 1715285956920
+[2024-05-09T20:19:20.936+0000] {docker.py:413} INFO - 24/05/09 20:19:20 INFO Utils: /opt/bitnami/spark/.ivy2/jars/io.delta_delta-storage-2.4.0.jar has been previously copied to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/io.delta_delta-storage-2.4.0.jar
+[2024-05-09T20:19:20.948+0000] {docker.py:413} INFO - 24/05/09 20:19:20 INFO Executor: Fetching file:///opt/bitnami/spark/.ivy2/jars/org.antlr_antlr4-runtime-4.9.3.jar with timestamp 1715285956920
+[2024-05-09T20:19:20.950+0000] {docker.py:413} INFO - 24/05/09 20:19:20 INFO Utils: /opt/bitnami/spark/.ivy2/jars/org.antlr_antlr4-runtime-4.9.3.jar has been previously copied to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/org.antlr_antlr4-runtime-4.9.3.jar
+[2024-05-09T20:19:20.973+0000] {docker.py:413} INFO - 24/05/09 20:19:20 INFO Executor: Fetching file:///opt/bitnami/spark/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar with timestamp 1715285956920
+[2024-05-09T20:19:20.975+0000] {docker.py:413} INFO - 24/05/09 20:19:20 INFO Utils: /opt/bitnami/spark/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar has been previously copied to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar
+[2024-05-09T20:19:20.990+0000] {docker.py:413} INFO - 24/05/09 20:19:20 INFO Executor: Fetching file:///opt/bitnami/spark/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar with timestamp 1715285956920
+[2024-05-09T20:19:21.504+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Utils: /opt/bitnami/spark/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar has been previously copied to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar
+[2024-05-09T20:19:21.533+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Executor: Fetching spark://localhost:34809/jars/io.delta_delta-storage-2.4.0.jar with timestamp 1715285956920
+[2024-05-09T20:19:21.651+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO TransportClientFactory: Successfully created connection to localhost/127.0.0.1:34809 after 87 ms (0 ms spent in bootstraps)
+[2024-05-09T20:19:21.670+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Utils: Fetching spark://localhost:34809/jars/io.delta_delta-storage-2.4.0.jar to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/fetchFileTemp14906880655428017348.tmp
+[2024-05-09T20:19:21.753+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Utils: /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/fetchFileTemp14906880655428017348.tmp has been previously copied to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/io.delta_delta-storage-2.4.0.jar
+[2024-05-09T20:19:21.759+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Executor: Adding file:/tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/io.delta_delta-storage-2.4.0.jar to class loader
+[2024-05-09T20:19:21.761+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Executor: Fetching spark://localhost:34809/jars/io.delta_delta-core_2.12-2.4.0.jar with timestamp 1715285956920
+[2024-05-09T20:19:21.761+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Utils: Fetching spark://localhost:34809/jars/io.delta_delta-core_2.12-2.4.0.jar to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/fetchFileTemp1727197577737811545.tmp
+[2024-05-09T20:19:21.839+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Utils: /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/fetchFileTemp1727197577737811545.tmp has been previously copied to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/io.delta_delta-core_2.12-2.4.0.jar
+[2024-05-09T20:19:21.844+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Executor: Adding file:/tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/io.delta_delta-core_2.12-2.4.0.jar to class loader
+[2024-05-09T20:19:21.858+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Executor: Fetching spark://localhost:34809/jars/org.antlr_antlr4-runtime-4.9.3.jar with timestamp 1715285956920
+[2024-05-09T20:19:21.863+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Utils: Fetching spark://localhost:34809/jars/org.antlr_antlr4-runtime-4.9.3.jar to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/fetchFileTemp135842191894543939.tmp
+[2024-05-09T20:19:21.879+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Utils: /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/fetchFileTemp135842191894543939.tmp has been previously copied to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/org.antlr_antlr4-runtime-4.9.3.jar
+[2024-05-09T20:19:21.895+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Executor: Adding file:/tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/org.antlr_antlr4-runtime-4.9.3.jar to class loader
+[2024-05-09T20:19:21.898+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Executor: Fetching spark://localhost:34809/jars/org.apache.hadoop_hadoop-aws-3.3.6.jar with timestamp 1715285956920
+[2024-05-09T20:19:21.907+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Utils: Fetching spark://localhost:34809/jars/org.apache.hadoop_hadoop-aws-3.3.6.jar to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/fetchFileTemp15097457686778890212.tmp
+[2024-05-09T20:19:21.919+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Utils: /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/fetchFileTemp15097457686778890212.tmp has been previously copied to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/org.apache.hadoop_hadoop-aws-3.3.6.jar
+[2024-05-09T20:19:21.933+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Executor: Adding file:/tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/org.apache.hadoop_hadoop-aws-3.3.6.jar to class loader
+24/05/09 20:19:21 INFO Executor: Fetching spark://localhost:34809/jars/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar with timestamp 1715285956920
+[2024-05-09T20:19:21.937+0000] {docker.py:413} INFO - 24/05/09 20:19:21 INFO Utils: Fetching spark://localhost:34809/jars/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/fetchFileTemp13748779671507641289.tmp
+[2024-05-09T20:19:25.409+0000] {docker.py:413} INFO - 24/05/09 20:19:25 INFO Utils: /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/fetchFileTemp13748779671507641289.tmp has been previously copied to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar
+[2024-05-09T20:19:25.563+0000] {docker.py:413} INFO - 24/05/09 20:19:25 INFO Executor: Adding file:/tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar to class loader
+[2024-05-09T20:19:25.571+0000] {docker.py:413} INFO - 24/05/09 20:19:25 INFO Executor: Fetching spark://localhost:34809/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar with timestamp 1715285956920
+24/05/09 20:19:25 INFO Utils: Fetching spark://localhost:34809/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/fetchFileTemp426073594784371596.tmp
+[2024-05-09T20:19:25.580+0000] {docker.py:413} INFO - 24/05/09 20:19:25 INFO Utils: /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/fetchFileTemp426073594784371596.tmp has been previously copied to /tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar
+[2024-05-09T20:19:25.592+0000] {docker.py:413} INFO - 24/05/09 20:19:25 INFO Executor: Adding file:/tmp/spark-d638b127-82ca-4623-86c1-1a6cedaa6de7/userFiles-92d7134e-7b1e-4a34-bc5b-3b6fab161e69/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar to class loader
+[2024-05-09T20:19:25.616+0000] {docker.py:413} INFO - 24/05/09 20:19:25 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 46461.
+[2024-05-09T20:19:25.619+0000] {docker.py:413} INFO - 24/05/09 20:19:25 INFO NettyBlockTransferService: Server created on localhost:46461
+[2024-05-09T20:19:25.624+0000] {docker.py:413} INFO - 24/05/09 20:19:25 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2024-05-09T20:19:25.680+0000] {docker.py:413} INFO - 24/05/09 20:19:25 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, localhost, 46461, None)
+[2024-05-09T20:19:25.690+0000] {docker.py:413} INFO - 24/05/09 20:19:25 INFO BlockManagerMasterEndpoint: Registering block manager localhost:46461 with 434.4 MiB RAM, BlockManagerId(driver, localhost, 46461, None)
+[2024-05-09T20:19:25.697+0000] {docker.py:413} INFO - 24/05/09 20:19:25 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, localhost, 46461, None)
+[2024-05-09T20:19:25.705+0000] {docker.py:413} INFO - 24/05/09 20:19:25 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, localhost, 46461, None)
+[2024-05-09T20:19:44.124+0000] {docker.py:413} INFO - Traceback (most recent call last):
+[2024-05-09T20:19:44.125+0000] {docker.py:413} INFO - File "/opt/spark-apps/csv_to_delta.py", line 36, in <module>
+[2024-05-09T20:19:44.125+0000] {docker.py:413} INFO - 
+[2024-05-09T20:19:44.126+0000] {docker.py:413} INFO - main()
+[2024-05-09T20:19:44.126+0000] {docker.py:413} INFO - 
+[2024-05-09T20:19:44.126+0000] {docker.py:413} INFO - File "/opt/spark-apps/csv_to_delta.py", line 17, in main
+[2024-05-09T20:19:44.127+0000] {docker.py:413} INFO - 
+[2024-05-09T20:19:44.127+0000] {docker.py:413} INFO - spark.sql("DROP SCHEMA IF EXISTS wba CASCADE")
+[2024-05-09T20:19:44.128+0000] {docker.py:413} INFO - 
+[2024-05-09T20:19:44.128+0000] {docker.py:413} INFO - File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/sql/session.py", line 1440, in sql
+[2024-05-09T20:19:44.128+0000] {docker.py:413} INFO - File "/opt/bitnami/spark/python/lib/py4j-0.10.9.7-src.zip/py4j/java_gateway.py", line 1322, in __call__
+[2024-05-09T20:19:44.129+0000] {docker.py:413} INFO - File "/opt/bitnami/spark/python/lib/pyspark.zip/pyspark/errors/exceptions/captured.py", line 175, in deco
+[2024-05-09T20:19:44.129+0000] {docker.py:413} INFO - pyspark.errors.exceptions.captured
+[2024-05-09T20:19:44.130+0000] {docker.py:413} INFO - .
+[2024-05-09T20:19:44.130+0000] {docker.py:413} INFO - AnalysisException
+[2024-05-09T20:19:44.155+0000] {docker.py:413} INFO - : org.apache.hadoop.hive.ql.metadata.HiveException: java.lang.RuntimeException: Unable to instantiate org.apache.hadoop.hive.ql.metadata.SessionHiveMetaStoreClient
+[2024-05-09T20:19:45.012+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 268, in _raise_for_status
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.8/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: http://docker-proxy:2375/v1.43/containers/create
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 348, in _run_image
+    return self._run_image_with_mounts([*self.mounts, tmp_mount], add_tmp_variable=True)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 375, in _run_image_with_mounts
+    self.container = self.cli.create_container(
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/container.py", line 431, in create_container
+    return self.create_container_from_config(config, name, platform)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/container.py", line 448, in create_container_from_config
+    return self._result(res, True)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 274, in _result
+    self._raise_for_status(response)
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/api/client.py", line 270, in _raise_for_status
+    raise create_api_error_from_http_exception(e) from e
+  File "/home/airflow/.local/lib/python3.8/site-packages/docker/errors.py", line 39, in create_api_error_from_http_exception
+    raise cls(e, response=response, explanation=explanation) from e
+docker.errors.APIError: 400 Client Error for http://docker-proxy:2375/v1.43/containers/create: Bad Request ("invalid mount config for type "bind": bind source path does not exist: /tmp/airflowtmpdtv32bsg")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 486, in execute
+    return self._run_image()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 357, in _run_image
+    return self._run_image_with_mounts(self.mounts, add_tmp_variable=False)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 421, in _run_image_with_mounts
+    raise DockerContainerFailedException(f"Docker container failed: {result!r}", logs=log_lines)
+airflow.providers.docker.exceptions.DockerContainerFailedException: Docker container failed: {'StatusCode': 1}
+[2024-05-09T20:19:45.016+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=pyspark_dag, task_id=pyspark_minio, execution_date=20240508T201533, start_date=20240509T201549, end_date=20240509T201945
+[2024-05-09T20:19:45.028+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 9 for task pyspark_minio (Docker container failed: {'StatusCode': 1}; 654)
+[2024-05-09T20:19:45.036+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-05-09T20:19:45.050+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
