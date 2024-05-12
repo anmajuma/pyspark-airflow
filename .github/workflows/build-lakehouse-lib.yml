@@ -12,12 +12,12 @@ jobs:
     #     python-version: 3.8
     - name: Install Requirements
       run: |
-        python3 -m pip install --upgrade pip
+        python -m pip install --upgrade pip
         pip install setuptools
         pip install wheel        
     - name: Build Python Package
       run: |
-        python3 ./spark/setup.py sdist bdist_wheel
+        python ./spark/setup.py sdist bdist_wheel
         mkdir ./whlpkg
         cp -r ./dist/ ./whlpkg        
     - name: Temporarily save Whl Package
@@ -55,7 +55,7 @@ jobs:
     - name: Install Whls to Spark Cluster 
       run: |
         
-        docker exec --user root airflow-spark-spark-1 python3 -m pip install /opt/bitnami/spark/dist/lakehouse-0.1-py3-none-any.whl     
-        docker exec --user root airflow-spark-spark-worker-1 python3 -m pip install /opt/bitnami/spark/dist/lakehouse-0.1-py3-none-any.whl     
-        docker exec --user root airflow-spark-spark-worker-2 python3 -m pip install /opt/bitnami/spark/dist/lakehouse-0.1-py3-none-any.whl     
-        docker exec --user root airflow-spark-spark-worker-3 python3 -m pip install /opt/bitnami/spark/dist/lakehouse-0.1-py3-none-any.whl     
+        docker exec --user root airflow-spark-spark-1 python -m pip install /opt/bitnami/spark/dist/lakehouse-0.1-py3-none-any.whl     
+        docker exec --user root airflow-spark-spark-worker-1 python -m pip install /opt/bitnami/spark/dist/lakehouse-0.1-py3-none-any.whl     
+        docker exec --user root airflow-spark-spark-worker-2 python -m pip install /opt/bitnami/spark/dist/lakehouse-0.1-py3-none-any.whl     
+        docker exec --user root airflow-spark-spark-worker-3 python -m pip install /opt/bitnami/spark/dist/lakehouse-0.1-py3-none-any.whl     
