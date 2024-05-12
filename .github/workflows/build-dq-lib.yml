@@ -48,4 +48,10 @@ jobs:
     #   run: |
     #       pip install -U awscli
     #       aws s3 cp ./dist s3://aws-db-s3-bkt/whls/ --recursive
+    - name: Copy Whls to Spark Cluster 
+      run: |
+        docker cp ./whlpkg/. airflow-spark-spark-1:/opt/bitnami/spark
+        docker cp ./whlpkg/. airflow-spark-spark-worker-1:/opt/bitnami/spark
+        docker cp ./whlpkg/. airflow-spark-spark-worker-2:/opt/bitnami/spark
+        docker cp ./whlpkg/. airflow-spark-spark-worker-3:/opt/bitnami/spark
       
