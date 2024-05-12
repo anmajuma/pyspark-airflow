@@ -20,9 +20,9 @@ errPath = "s3a://%s/error" % aws_bucket_name
 stgpath = "s3a://%s/stage" % aws_bucket_name
 silverpath = "s3a://%s/silver" % aws_bucket_name
 sourceConnName = "wwi"
-sourceType = "postgres"
-sourceName = "wwi"
-tablenm = 'public/Colors'
+sourceType = "mongodb"
+sourceName = "WideWorldImporters"
+tablenm = 'Colors'
 partition_columns = ["ValidFrom"]
 
 taskStatusDF = removeduplicate.cleanRawData_removeDuplicate(spark,jobID,temppath,landingPath,tablenm,sourceName,sourceType,auditlogPath,dataDictConfigPath,partition_columns)
