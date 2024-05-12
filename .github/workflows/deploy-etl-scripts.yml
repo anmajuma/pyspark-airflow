@@ -9,6 +9,6 @@ jobs:
  
     - name: Copy ETL to Spark Cluster 
       run: |
-        docker cp ./scripts/. airflow-spark-spark-worker-1::/opt/bitnami/spark/dev/scripts
-        docker cp ./scripts/. airflow-spark-spark-worker-2::/opt/bitnami/spark/dev/scripts
-        docker cp ./scripts/. airflow-spark-spark-worker-3::/opt/bitnami/spark/dev/scripts
+        docker cp ./scripts/. airflow-spark-spark-worker-1:/opt/bitnami/spark/dev/scripts
+        docker cp ./scripts/. airflow-spark-spark-worker-2:/opt/bitnami/spark/dev/scripts
+        docker cp ./scripts/. airflow-spark-spark-worker-3:/opt/bitnami/spark/dev/scripts
