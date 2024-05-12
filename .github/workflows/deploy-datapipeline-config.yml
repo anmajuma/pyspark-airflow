@@ -6,4 +6,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: deploy to minio
-        run: mc cp --recursive $GITHUB_WORKSPACE/config minio/wba
+        run: mc cp --recursive $GITHUB_WORKSPACE/pipeline-config minio/wba
