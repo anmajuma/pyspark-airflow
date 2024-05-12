@@ -2,7 +2,7 @@
 name: Pyspark ETL Script Deploy 
 on: workflow_dispatch
 jobs:
-  whl-builder:
+  script-copy:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v1
