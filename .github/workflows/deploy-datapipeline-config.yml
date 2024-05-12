@@ -1,18 +1,11 @@
 name: Pyspark Data Pipeline Configuration Deploy 
 on: workflow_dispatch
 jobs:
-  build:
-    name: Deploy
+  deploy-datapipeline-config:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v1
 
-      - name: Minio Deploy
-        uses: lovellfelix/minio-deploy-action@v1
-        with:
-          endpoint: ${{ secrets.MINIO_ENDPOINT }}
-          access_key: ${{ secrets.MINIO_ACCESS_KEY }}
-          secret_key: ${{ secrets.MINIO_SECRET_KEY }}
-          bucket: 'wba'
-          source_dir: $GITHUB_WORKSPACE/config
-          target_dir: '/'
+      - name: deploy to minio
+        run: | 
+          mc cp --recursive $GITHUB_WORKSPACE/config mino/wba
