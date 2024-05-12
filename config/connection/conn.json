@@ -1,0 +1,13 @@
+[
+    {   
+        "connname" : "wwi",
+        "conntype" : "mongodb",
+        "conninfo" :
+        {
+            "sourceName" : "WideWorldImporters" ,
+            "url" : "democluster.vyvkl.mongodb.net",
+            "user" : "admin",
+            "password" : "kDC7HUCt1lIhOKNh"
+        }
+}
+]

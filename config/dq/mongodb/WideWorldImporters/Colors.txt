@@ -1,0 +1,42 @@
+{
+    "data_product_name": "Colors",
+    "columns" : [
+        {
+            "column_name" : "ColorName",
+            "dq_rule(s)" : [
+                {
+                    "rule_name" : "check_values_to_not_be_null",
+                    "rule_dimension" : "Completeness",
+                    "add_info" : {}
+                },
+                {
+                    "rule_name" : "check_values_to_be_unique",
+                    "rule_dimension" : "Uniqueness",
+                    "add_info" : {}
+                },
+                {
+                    "rule_name" : "check_values_to_be_in_set",
+                    "rule_dimension" : "Validity",
+                    "add_info" : {
+                        "value_set" : ["Red", "Green", "Yellow"]
+                    }
+                }
+            ]
+        },
+        {
+            "column_name" : "ColorID",
+            "dq_rule(s)" : [
+                {
+                    "rule_name" : "check_values_to_not_be_null",
+                    "rule_dimension" : "Completeness",
+                    "add_info" : {}
+                },
+                {
+                    "rule_name" : "check_values_to_be_unique",
+                    "rule_dimension" : "Uniqueness",
+                    "add_info" : {}
+                }
+            ]
+        }
+    ]
+}

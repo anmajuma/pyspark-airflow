@@ -1,0 +1,51 @@
+{
+    "data_product_name": "Suppliers",
+    "columns" : [
+        {
+            "column_name" : "SupplierID",
+            "dq_rule(s)" : [
+                {
+                    "rule_name" : "check_values_to_not_be_null",
+                    "rule_dimension" : "Completeness",
+                    "add_info" : {}
+                },
+                {
+                    "rule_name" : "check_values_to_be_unique",
+                    "rule_dimension" : "Uniqueness",
+                    "add_info" : {}
+                },
+                {
+                    "rule_name" : "check_values_to_be_in_set",
+                    "rule_dimension" : "Validity",
+                    "add_info" : {
+                        "value_set" : [2, 3, 4]
+                    }
+                }
+            ]
+        },
+        {
+            "column_name" : "PhoneNumber",
+            "dq_rule(s)" : [
+                {
+                    "rule_name" : "check_values_to_match_regex",
+                    "rule_dimension" : "Validity",
+                    "add_info" : {
+                        "regex" : "\(?\d{1,4}\)?\s?\(?\d{1,4}\)?[\s.-]?\d{3}[\s.-]?\d{4}"
+                    }
+                }
+            ]
+        },
+        {
+            "column_name" : "PaymentDays",
+            "dq_rule(s)" : [
+                {
+                    "rule_name" : "check_values_to_be_between",
+                    "rule_dimension" : "Validity",
+                    "add_info" : {
+                        "min_value" : 7 ,"max_value" : 14
+                    }
+                }
+            ]
+        }        
+    ]
+}

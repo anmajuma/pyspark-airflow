@@ -1,0 +1,3314 @@
+[
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "Colors",
+      "ColumnName": "ColorID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "Colors",
+      "ColumnName": "ColorName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "Colors",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "Colors",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "Colors",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "OrderLines",
+      "ColumnName": "OrderLineID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "OrderLines",
+      "ColumnName": "OrderID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "OrderLines",
+      "ColumnName": "StockItemID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "OrderLines",
+      "ColumnName": "Description",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "OrderLines",
+      "ColumnName": "PackageTypeID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "OrderLines",
+      "ColumnName": "Quantity",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "OrderLines",
+      "ColumnName": "UnitPrice",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "OrderLines",
+      "ColumnName": "TaxRate",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "OrderLines",
+      "ColumnName": "PickedQuantity",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "OrderLines",
+      "ColumnName": "PickingCompletedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "OrderLines",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "OrderLines",
+      "ColumnName": "LastEditedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 12,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "PackageTypes",
+      "ColumnName": "PackageTypeID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "PackageTypes",
+      "ColumnName": "PackageTypeName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "PackageTypes",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "PackageTypes",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "PackageTypes",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockGroups",
+      "ColumnName": "StockGroupID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockGroups",
+      "ColumnName": "StockGroupName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockGroups",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockGroups",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockGroups",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemStockGroups",
+      "ColumnName": "StockItemStockGroupID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemStockGroups",
+      "ColumnName": "StockItemID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemStockGroups",
+      "ColumnName": "StockGroupID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemStockGroups",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemStockGroups",
+      "ColumnName": "LastEditedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "StateProvinces",
+      "ColumnName": "StateProvinceID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "StateProvinces",
+      "ColumnName": "StateProvinceCode",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "StateProvinces",
+      "ColumnName": "StateProvinceName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "StateProvinces",
+      "ColumnName": "CountryID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "StateProvinces",
+      "ColumnName": "SalesTerritory",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "StateProvinces",
+      "ColumnName": "Border",
+      "ColumnDataType": "geography",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "StateProvinces",
+      "ColumnName": "LatestRecordedPopulation",
+      "ColumnDataType": "bigint",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "StateProvinces",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "StateProvinces",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "StateProvinces",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerTransactions",
+      "ColumnName": "CustomerTransactionID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerTransactions",
+      "ColumnName": "CustomerID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerTransactions",
+      "ColumnName": "TransactionTypeID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerTransactions",
+      "ColumnName": "InvoiceID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerTransactions",
+      "ColumnName": "PaymentMethodID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerTransactions",
+      "ColumnName": "TransactionDate",
+      "ColumnDataType": "date",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerTransactions",
+      "ColumnName": "AmountExcludingTax",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerTransactions",
+      "ColumnName": "TaxAmount",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerTransactions",
+      "ColumnName": "TransactionAmount",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerTransactions",
+      "ColumnName": "OutstandingBalance",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerTransactions",
+      "ColumnName": "FinalizationDate",
+      "ColumnDataType": "date",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerTransactions",
+      "ColumnName": "IsFinalized",
+      "ColumnDataType": "bit",
+      "ColumnOrdinal": 12,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerTransactions",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 13,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerTransactions",
+      "ColumnName": "LastEditedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 14,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Cities",
+      "ColumnName": "CityID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Cities",
+      "ColumnName": "CityName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Cities",
+      "ColumnName": "StateProvinceID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Cities",
+      "ColumnName": "Location",
+      "ColumnDataType": "geography",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Cities",
+      "ColumnName": "LatestRecordedPopulation",
+      "ColumnDataType": "bigint",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Cities",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Cities",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Cities",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "SystemParameters",
+      "ColumnName": "SystemParameterID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "SystemParameters",
+      "ColumnName": "DeliveryAddressLine1",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "SystemParameters",
+      "ColumnName": "DeliveryAddressLine2",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "SystemParameters",
+      "ColumnName": "DeliveryCityID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "SystemParameters",
+      "ColumnName": "DeliveryPostalCode",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "SystemParameters",
+      "ColumnName": "DeliveryLocation",
+      "ColumnDataType": "geography",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "SystemParameters",
+      "ColumnName": "PostalAddressLine1",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "SystemParameters",
+      "ColumnName": "PostalAddressLine2",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "SystemParameters",
+      "ColumnName": "PostalCityID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "SystemParameters",
+      "ColumnName": "PostalPostalCode",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "SystemParameters",
+      "ColumnName": "ApplicationSettings",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "SystemParameters",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 12,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "SystemParameters",
+      "ColumnName": "LastEditedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 13,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "InvoiceLines",
+      "ColumnName": "InvoiceLineID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "InvoiceLines",
+      "ColumnName": "InvoiceID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "InvoiceLines",
+      "ColumnName": "StockItemID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "InvoiceLines",
+      "ColumnName": "Description",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "InvoiceLines",
+      "ColumnName": "PackageTypeID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "InvoiceLines",
+      "ColumnName": "Quantity",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "InvoiceLines",
+      "ColumnName": "UnitPrice",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "InvoiceLines",
+      "ColumnName": "TaxRate",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "InvoiceLines",
+      "ColumnName": "TaxAmount",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "InvoiceLines",
+      "ColumnName": "LineProfit",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "InvoiceLines",
+      "ColumnName": "ExtendedPrice",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "InvoiceLines",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 12,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "InvoiceLines",
+      "ColumnName": "LastEditedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 13,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "SupplierID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "SupplierName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "SupplierCategoryID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "PrimaryContactPersonID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "AlternateContactPersonID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "DeliveryMethodID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "DeliveryCityID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "PostalCityID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "SupplierReference",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "BankAccountName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "BankAccountBranch",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "BankAccountCode",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 12,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "BankAccountNumber",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 13,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "BankInternationalCode",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 14,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "PaymentDays",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 15,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "InternalComments",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 16,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "PhoneNumber",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 17,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "FaxNumber",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 18,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "WebsiteURL",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 19,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "DeliveryAddressLine1",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 20,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "DeliveryAddressLine2",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 21,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "DeliveryPostalCode",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 22,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "DeliveryLocation",
+      "ColumnDataType": "geography",
+      "ColumnOrdinal": 23,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "PostalAddressLine1",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 24,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "PostalAddressLine2",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 25,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "PostalPostalCode",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 26,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 27,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 28,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "Suppliers",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 29,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemTransactions",
+      "ColumnName": "StockItemTransactionID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemTransactions",
+      "ColumnName": "StockItemID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemTransactions",
+      "ColumnName": "TransactionTypeID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemTransactions",
+      "ColumnName": "CustomerID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemTransactions",
+      "ColumnName": "InvoiceID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemTransactions",
+      "ColumnName": "SupplierID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemTransactions",
+      "ColumnName": "PurchaseOrderID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemTransactions",
+      "ColumnName": "TransactionOccurredWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemTransactions",
+      "ColumnName": "Quantity",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemTransactions",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemTransactions",
+      "ColumnName": "LastEditedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "CustomerID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "CustomerName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "BillToCustomerID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "CustomerCategoryID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "BuyingGroupID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "PrimaryContactPersonID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "AlternateContactPersonID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "DeliveryMethodID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "DeliveryCityID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "PostalCityID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "CreditLimit",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "AccountOpenedDate",
+      "ColumnDataType": "date",
+      "ColumnOrdinal": 12,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "StandardDiscountPercentage",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 13,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "IsStatementSent",
+      "ColumnDataType": "bit",
+      "ColumnOrdinal": 14,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "IsOnCreditHold",
+      "ColumnDataType": "bit",
+      "ColumnOrdinal": 15,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "PaymentDays",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 16,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "PhoneNumber",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 17,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "FaxNumber",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 18,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "DeliveryRun",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 19,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "RunPosition",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 20,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "WebsiteURL",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 21,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "DeliveryAddressLine1",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 22,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "DeliveryAddressLine2",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 23,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "DeliveryPostalCode",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 24,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "DeliveryLocation",
+      "ColumnDataType": "geography",
+      "ColumnOrdinal": 25,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "PostalAddressLine1",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 26,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "PostalAddressLine2",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 27,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "PostalPostalCode",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 28,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 29,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 30,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Customers",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 31,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrders",
+      "ColumnName": "PurchaseOrderID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrders",
+      "ColumnName": "SupplierID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrders",
+      "ColumnName": "OrderDate",
+      "ColumnDataType": "date",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrders",
+      "ColumnName": "DeliveryMethodID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrders",
+      "ColumnName": "ContactPersonID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrders",
+      "ColumnName": "ExpectedDeliveryDate",
+      "ColumnDataType": "date",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrders",
+      "ColumnName": "SupplierReference",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrders",
+      "ColumnName": "IsOrderFinalized",
+      "ColumnDataType": "bit",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrders",
+      "ColumnName": "Comments",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrders",
+      "ColumnName": "InternalComments",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrders",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrders",
+      "ColumnName": "LastEditedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 12,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "OrderID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "CustomerID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "SalespersonPersonID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "PickedByPersonID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "ContactPersonID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "BackorderOrderID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "OrderDate",
+      "ColumnDataType": "date",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "ExpectedDeliveryDate",
+      "ColumnDataType": "date",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "CustomerPurchaseOrderNumber",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "IsUndersupplyBackordered",
+      "ColumnDataType": "bit",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "Comments",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "DeliveryInstructions",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 12,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "InternalComments",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 13,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "PickingCompletedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 14,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 15,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Orders",
+      "ColumnName": "LastEditedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 16,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "ColdRoomTemperatures",
+      "ColumnName": "ColdRoomTemperatureID",
+      "ColumnDataType": "bigint",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "ColdRoomTemperatures",
+      "ColumnName": "ColdRoomSensorNumber",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "ColdRoomTemperatures",
+      "ColumnName": "RecordedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "ColdRoomTemperatures",
+      "ColumnName": "Temperature",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "ColdRoomTemperatures",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "ColdRoomTemperatures",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "VehicleTemperatures",
+      "ColumnName": "VehicleTemperatureID",
+      "ColumnDataType": "bigint",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "VehicleTemperatures",
+      "ColumnName": "VehicleRegistration",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "VehicleTemperatures",
+      "ColumnName": "ChillerSensorNumber",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "VehicleTemperatures",
+      "ColumnName": "RecordedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "VehicleTemperatures",
+      "ColumnName": "Temperature",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "VehicleTemperatures",
+      "ColumnName": "FullSensorData",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "VehicleTemperatures",
+      "ColumnName": "IsCompressed",
+      "ColumnDataType": "bit",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "VehicleTemperatures",
+      "ColumnName": "CompressedSensorData",
+      "ColumnDataType": "varbinary",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "PersonID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "FullName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "PreferredName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "SearchName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "IsPermittedToLogon",
+      "ColumnDataType": "bit",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "LogonName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "IsExternalLogonProvider",
+      "ColumnDataType": "bit",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "HashedPassword",
+      "ColumnDataType": "varbinary",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "IsSystemUser",
+      "ColumnDataType": "bit",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "IsEmployee",
+      "ColumnDataType": "bit",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "IsSalesperson",
+      "ColumnDataType": "bit",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "UserPreferences",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 12,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "PhoneNumber",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 13,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "FaxNumber",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 14,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "EmailAddress",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 15,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "Photo",
+      "ColumnDataType": "varbinary",
+      "ColumnOrdinal": 16,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "CustomFields",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 17,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "OtherLanguages",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 18,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 19,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 20,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "People",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 21,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "StockItemID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "StockItemName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "SupplierID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "ColorID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "UnitPackageID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "OuterPackageID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "Brand",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "Size",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "LeadTimeDays",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "QuantityPerOuter",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "IsChillerStock",
+      "ColumnDataType": "bit",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "Barcode",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 12,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "TaxRate",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 13,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "UnitPrice",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 14,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "RecommendedRetailPrice",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 15,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "TypicalWeightPerUnit",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 16,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "MarketingComments",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 17,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "InternalComments",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 18,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "Photo",
+      "ColumnDataType": "varbinary",
+      "ColumnOrdinal": 19,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "CustomFields",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 20,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "Tags",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 21,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "SearchDetails",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 22,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 23,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 24,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItems",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 25,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Countries",
+      "ColumnName": "CountryID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Countries",
+      "ColumnName": "CountryName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Countries",
+      "ColumnName": "FormalName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Countries",
+      "ColumnName": "IsoAlpha3Code",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Countries",
+      "ColumnName": "IsoNumericCode",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Countries",
+      "ColumnName": "CountryType",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Countries",
+      "ColumnName": "LatestRecordedPopulation",
+      "ColumnDataType": "bigint",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Countries",
+      "ColumnName": "Continent",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Countries",
+      "ColumnName": "Region",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Countries",
+      "ColumnName": "Subregion",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Countries",
+      "ColumnName": "Border",
+      "ColumnDataType": "geography",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Countries",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 12,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Countries",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 13,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "Countries",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 14,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemHoldings",
+      "ColumnName": "StockItemID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemHoldings",
+      "ColumnName": "QuantityOnHand",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemHoldings",
+      "ColumnName": "BinLocation",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemHoldings",
+      "ColumnName": "LastStocktakeQuantity",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemHoldings",
+      "ColumnName": "LastCostPrice",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemHoldings",
+      "ColumnName": "ReorderLevel",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemHoldings",
+      "ColumnName": "TargetStockLevel",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemHoldings",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Warehouse",
+      "TableName": "StockItemHoldings",
+      "ColumnName": "LastEditedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrderLines",
+      "ColumnName": "PurchaseOrderLineID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrderLines",
+      "ColumnName": "PurchaseOrderID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrderLines",
+      "ColumnName": "StockItemID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrderLines",
+      "ColumnName": "OrderedOuters",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrderLines",
+      "ColumnName": "Description",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrderLines",
+      "ColumnName": "ReceivedOuters",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrderLines",
+      "ColumnName": "PackageTypeID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrderLines",
+      "ColumnName": "ExpectedUnitPricePerOuter",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrderLines",
+      "ColumnName": "LastReceiptDate",
+      "ColumnDataType": "date",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrderLines",
+      "ColumnName": "IsOrderLineFinalized",
+      "ColumnDataType": "bit",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrderLines",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "PurchaseOrderLines",
+      "ColumnName": "LastEditedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 12,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "DeliveryMethods",
+      "ColumnName": "DeliveryMethodID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "DeliveryMethods",
+      "ColumnName": "DeliveryMethodName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "DeliveryMethods",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "DeliveryMethods",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "DeliveryMethods",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "PaymentMethods",
+      "ColumnName": "PaymentMethodID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "PaymentMethods",
+      "ColumnName": "PaymentMethodName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "PaymentMethods",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "PaymentMethods",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "PaymentMethods",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierTransactions",
+      "ColumnName": "SupplierTransactionID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierTransactions",
+      "ColumnName": "SupplierID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierTransactions",
+      "ColumnName": "TransactionTypeID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierTransactions",
+      "ColumnName": "PurchaseOrderID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierTransactions",
+      "ColumnName": "PaymentMethodID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierTransactions",
+      "ColumnName": "SupplierInvoiceNumber",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierTransactions",
+      "ColumnName": "TransactionDate",
+      "ColumnDataType": "date",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierTransactions",
+      "ColumnName": "AmountExcludingTax",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierTransactions",
+      "ColumnName": "TaxAmount",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierTransactions",
+      "ColumnName": "TransactionAmount",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierTransactions",
+      "ColumnName": "OutstandingBalance",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierTransactions",
+      "ColumnName": "FinalizationDate",
+      "ColumnDataType": "date",
+      "ColumnOrdinal": 12,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierTransactions",
+      "ColumnName": "IsFinalized",
+      "ColumnDataType": "bit",
+      "ColumnOrdinal": 13,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierTransactions",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 14,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierTransactions",
+      "ColumnName": "LastEditedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 15,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "TransactionTypes",
+      "ColumnName": "TransactionTypeID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "TransactionTypes",
+      "ColumnName": "TransactionTypeName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "TransactionTypes",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "TransactionTypes",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Application",
+      "TableName": "TransactionTypes",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "SpecialDeals",
+      "ColumnName": "SpecialDealID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "SpecialDeals",
+      "ColumnName": "StockItemID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "SpecialDeals",
+      "ColumnName": "CustomerID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "SpecialDeals",
+      "ColumnName": "BuyingGroupID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "SpecialDeals",
+      "ColumnName": "CustomerCategoryID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "SpecialDeals",
+      "ColumnName": "StockGroupID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "SpecialDeals",
+      "ColumnName": "DealDescription",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "SpecialDeals",
+      "ColumnName": "StartDate",
+      "ColumnDataType": "date",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "SpecialDeals",
+      "ColumnName": "EndDate",
+      "ColumnDataType": "date",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "SpecialDeals",
+      "ColumnName": "DiscountAmount",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "SpecialDeals",
+      "ColumnName": "DiscountPercentage",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "SpecialDeals",
+      "ColumnName": "UnitPrice",
+      "ColumnDataType": "decimal",
+      "ColumnOrdinal": 12,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "SpecialDeals",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 13,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "SpecialDeals",
+      "ColumnName": "LastEditedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 14,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierCategories",
+      "ColumnName": "SupplierCategoryID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierCategories",
+      "ColumnName": "SupplierCategoryName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierCategories",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierCategories",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Purchasing",
+      "TableName": "SupplierCategories",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "BuyingGroups",
+      "ColumnName": "BuyingGroupID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "BuyingGroups",
+      "ColumnName": "BuyingGroupName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "BuyingGroups",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "BuyingGroups",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "BuyingGroups",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "InvoiceID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "CustomerID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "BillToCustomerID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "OrderID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "DeliveryMethodID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "ContactPersonID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 6,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "AccountsPersonID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 7,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "SalespersonPersonID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 8,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "PackedByPersonID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 9,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "InvoiceDate",
+      "ColumnDataType": "date",
+      "ColumnOrdinal": 10,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "CustomerPurchaseOrderNumber",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 11,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "IsCreditNote",
+      "ColumnDataType": "bit",
+      "ColumnOrdinal": 12,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "CreditNoteReason",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 13,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "Comments",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 14,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "DeliveryInstructions",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 15,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "InternalComments",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 16,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "TotalDryItems",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 17,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "TotalChillerItems",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 18,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "DeliveryRun",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 19,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "RunPosition",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 20,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "ReturnedDeliveryData",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 21,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "ConfirmedDeliveryTime",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 22,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "ConfirmedReceivedBy",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 23,
+      "ColumnNullable": "YES",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 24,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "Invoices",
+      "ColumnName": "LastEditedWhen",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 25,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerCategories",
+      "ColumnName": "CustomerCategoryID",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 1,
+      "ColumnNullable": "NO",
+      "ColumnPK": "X"
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerCategories",
+      "ColumnName": "CustomerCategoryName",
+      "ColumnDataType": "nvarchar",
+      "ColumnOrdinal": 2,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerCategories",
+      "ColumnName": "LastEditedBy",
+      "ColumnDataType": "int",
+      "ColumnOrdinal": 3,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerCategories",
+      "ColumnName": "ValidFrom",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 4,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    },
+    {
+      "TableSchema": "Sales",
+      "TableName": "CustomerCategories",
+      "ColumnName": "ValidTo",
+      "ColumnDataType": "datetime2",
+      "ColumnOrdinal": 5,
+      "ColumnNullable": "NO",
+      "ColumnPK": null
+    }
+  ]

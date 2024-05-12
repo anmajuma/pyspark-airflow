@@ -56,4 +56,13 @@ jobs:
         docker cp ./whlpkg/. airflow-spark-spark-worker-1:/opt/bitnami/spark
         docker cp ./whlpkg/. airflow-spark-spark-worker-2:/opt/bitnami/spark
         docker cp ./whlpkg/. airflow-spark-spark-worker-3:/opt/bitnami/spark
-      
+    - name: Install Whls to Spark Cluster 
+      run: |
+        docker exec airflow-spark-spark-1 pip install /opt/bitnami/spark/dist/gedq-0.1-py3-none-any.whl
+        docker exec airflow-spark-spark-1 pip install /opt/bitnami/spark/dist/lakehouse-0.1-py3-none-any.whl     
+        docker exec airflow-spark-spark-worker-1 pip install /opt/bitnami/spark/dist/gedq-0.1-py3-none-any.whl
+        docker exec airflow-spark-spark-worker-1 pip install /opt/bitnami/spark/dist/lakehouse-0.1-py3-none-any.whl     
+        docker exec airflow-spark-spark-worker-2 pip install /opt/bitnami/spark/dist/gedq-0.1-py3-none-any.whl
+        docker exec airflow-spark-spark-worker-2 pip install /opt/bitnami/spark/dist/lakehouse-0.1-py3-none-any.whl     
+        docker exec airflow-spark-spark-worker-3 pip install /opt/bitnami/spark/dist/gedq-0.1-py3-none-any.whl
+        docker exec airflow-spark-spark-worker-3 pip install /opt/bitnami/spark/dist/lakehouse-0.1-py3-none-any.whl     
