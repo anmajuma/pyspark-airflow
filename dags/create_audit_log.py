@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 
 
 default_args = {
-    'owner' : 'anitta',
+    'owner' : 'John Doe',
     'retries' : 1,
     'retry_delay' : timedelta(minutes=1),
     'depends_on_past' : True

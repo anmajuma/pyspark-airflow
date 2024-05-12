@@ -1,0 +1,16 @@
+
+name: Airflow DAG Deploy 
+on: workflow_dispatch
+jobs:
+  deploy-airflow-dag:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v1
+ 
+    - name: Copy DAGS to AIRFLOW Webserver 
+      run: |
+        docker cp ./dags/. airflow-spark-airflow-webserver-1:/opt/airflow/dags
+    - name: Restart AIRFLOW Webserver 
+      run: |
+        docker restart airflow-spark-airflow-webserver-1
+    
