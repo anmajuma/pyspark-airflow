@@ -1,5 +1,5 @@
 
-name: Pyspark Data Quality Lib Build 
+name: Pyspark LakeHouse Lib Build 
 on: workflow_dispatch
 jobs:
   whl-builder:
