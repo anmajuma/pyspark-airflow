@@ -20,8 +20,8 @@ jobs:
         python3 $GITHUB_WORKSPACE/gedq/setup.py sdist bdist_wheel
         python3 $GITHUB_WORKSPACE/spark/setup.py sdist bdist_wheel
         mkdir ./whlpkg
-        cp -r $GITHUB_WORKSPACE/gedq/dist ./whlpkg
-        cp -r $GITHUB_WORKSPACE/spark/dist/ ./whlpkg        
+        cp -r $GITHUB_WORKSPACE/dist ./whlpkg
+        cp -r $GITHUB_WORKSPACE/dist/ ./whlpkg        
     - name: Temporarily save Whl Package
       uses: actions/upload-artifact@v4
       with:
