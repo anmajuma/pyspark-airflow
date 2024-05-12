@@ -1,0 +1,14 @@
+
+name: Pyspark ETL Script Deploy 
+on: workflow_dispatch
+jobs:
+  whl-builder:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v1
+ 
+    - name: Copy ETL to Spark Cluster 
+      run: |
+        docker cp ./scripts/. airflow-spark-spark-worker-1::/opt/bitnami/spark/dev/scripts
+        docker cp ./scripts/. airflow-spark-spark-worker-2::/opt/bitnami/spark/dev/scripts
+        docker cp ./scripts/. airflow-spark-spark-worker-3::/opt/bitnami/spark/dev/scripts
