@@ -1,0 +1,51 @@
+
+name: Pyspark Data Quality Lib Build 
+on: workflow_dispatch
+jobs:
+  whl-builder:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v1
+    # - name: Set up Python 3.8
+    #   uses: actions/setup-python@v1
+    #   with:
+    #     python-version: 3.8
+    - name: Install Requirements
+      run: |
+        python3 -m pip install --upgrade pip
+        pip install setuptools
+        pip install wheel        
+    - name: Build Python Package
+      run: |
+        python3 ./gedq/setup.py sdist bdist_wheel
+        python3 ./spark/setup.py sdist bdist_wheel
+        mkdir ./whlpkg
+        cp -r ./gedq/dist ./whlpkg
+        cp -r ./spark/dist/ ./whlpkg        
+    - name: Temporarily save Whl Package
+      uses: actions/upload-artifact@v4
+      with:
+          name: custom-python-package-artifact
+          path: ./whlpkg
+          retention-days: 1
+          overwrite: true
+  whl-uploader:
+    runs-on: self-hosted
+    needs: whl-builder
+    steps:
+    - uses: actions/download-artifact@v4
+      with:
+        name: custom-python-package-artifact
+    - name: Display structure of downloaded files
+      run: ls -R
+    # - name: Configure AWS Credentials
+    #   uses: aws-actions/configure-aws-credentials@v4
+    #   with:
+    #     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+    #     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+    #     aws-region: us-east-1
+    # - name: Upload Libs to S3 
+    #   run: |
+    #       pip install -U awscli
+    #       aws s3 cp ./dist s3://aws-db-s3-bkt/whls/ --recursive
+      
