@@ -1,0 +1,178 @@
+[2024-05-10T20:13:40.818+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: pyspark_airflow_demo_dag.spark_submit manual__2024-05-10T20:13:38.860170+00:00 [queued]>
+[2024-05-10T20:13:40.829+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: pyspark_airflow_demo_dag.spark_submit manual__2024-05-10T20:13:38.860170+00:00 [queued]>
+[2024-05-10T20:13:40.830+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-10T20:13:40.830+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2024-05-10T20:13:40.831+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-10T20:13:40.846+0000] {taskinstance.py:1389} INFO - Executing <Task(SSHOperator): spark_submit> on 2024-05-10 20:13:38.860170+00:00
+[2024-05-10T20:13:40.850+0000] {standard_task_runner.py:52} INFO - Started process 225 to run task
+[2024-05-10T20:13:40.854+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'pyspark_***_demo_dag', 'spark_submit', 'manual__2024-05-10T20:13:38.860170+00:00', '--job-id', '18', '--raw', '--subdir', 'DAGS_FOLDER/insert_data.py', '--cfg-path', '/tmp/tmpjua_eckm', '--error-file', '/tmp/tmpcv01hlw3']
+[2024-05-10T20:13:40.856+0000] {standard_task_runner.py:80} INFO - Job 18: Subtask spark_submit
+[2024-05-10T20:13:40.923+0000] {task_command.py:371} INFO - Running <TaskInstance: pyspark_airflow_demo_dag.spark_submit manual__2024-05-10T20:13:38.860170+00:00 [running]> on host 7d056acab3c4
+[2024-05-10T20:13:41.134+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=pyspark_***_demo_dag
+AIRFLOW_CTX_TASK_ID=spark_submit
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-10T20:13:38.860170+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-05-10T20:13:38.860170+00:00
+[2024-05-10T20:13:41.137+0000] {ssh.py:136} INFO - Creating ssh_client
+[2024-05-10T20:13:41.269+0000] {ssh.py:114} INFO - ssh_hook is not provided or invalid. Trying ssh_conn_id to create SSHHook.
+[2024-05-10T20:13:41.280+0000] {base.py:68} INFO - Using connection ID 'ssh_spark' for task execution.
+[2024-05-10T20:13:41.281+0000] {ssh.py:287} WARNING - No Host Key Verification. This won't protect against Man-In-The-Middle attacks
+[2024-05-10T20:13:41.292+0000] {transport.py:1874} INFO - Connected (version 2.0, client OpenSSH_8.4p1)
+[2024-05-10T20:13:41.355+0000] {transport.py:1874} INFO - Authentication (publickey) failed.
+[2024-05-10T20:13:41.403+0000] {transport.py:1874} INFO - Authentication (password) successful!
+[2024-05-10T20:13:41.405+0000] {ssh.py:464} INFO - Running command: . /home/spark_user/docker_env.txt && spark-submit             --master spark://spark:7077             --deploy-mode client             --executor-memory 4g             --executor-cores 2             --driver-cores 1            --driver-memory 1g             /opt/bitnami/spark/dev/scripts/pyspark_trial.py
+            
+[2024-05-10T20:13:42.897+0000] {ssh.py:496} INFO - :: loading settings :: url = jar:file:/opt/bitnami/spark/jars/ivy-2.5.1.jar!/org/apache/ivy/core/settings/ivysettings.xml
+[2024-05-10T20:13:43.002+0000] {ssh.py:500} WARNING - Ivy Default Cache set to: /home/spark_user/.ivy2/cache
+The jars for the packages stored in: /home/spark_user/.ivy2/jars
+[2024-05-10T20:13:43.008+0000] {ssh.py:500} WARNING - io.delta#delta-core_2.12 added as a dependency
+[2024-05-10T20:13:43.009+0000] {ssh.py:500} WARNING - org.apache.hadoop#hadoop-aws added as a dependency
+[2024-05-10T20:13:43.011+0000] {ssh.py:500} WARNING - :: resolving dependencies :: org.apache.spark#spark-submit-parent-4457b6d1-bf9c-435e-8857-4b830610fcea;1.0
+	confs: [default]
+[2024-05-10T20:13:44.697+0000] {ssh.py:500} WARNING - 	found io.delta#delta-core_2.12;2.4.0 in central
+[2024-05-10T20:13:45.165+0000] {ssh.py:500} WARNING - 	found io.delta#delta-storage;2.4.0 in central
+[2024-05-10T20:13:54.749+0000] {ssh.py:500} WARNING - You probably access the destination server through a proxy server that is not well configured.
+[2024-05-10T20:13:55.577+0000] {ssh.py:500} WARNING - You probably access the destination server through a proxy server that is not well configured.
+[2024-05-10T20:13:55.584+0000] {ssh.py:500} WARNING - 	found org.antlr#antlr4-runtime;4.9.3 in central
+[2024-05-10T20:13:57.678+0000] {ssh.py:500} WARNING - You probably access the destination server through a proxy server that is not well configured.
+[2024-05-10T20:13:58.015+0000] {ssh.py:500} WARNING - You probably access the destination server through a proxy server that is not well configured.
+[2024-05-10T20:13:58.043+0000] {ssh.py:500} WARNING - 	found org.apache.hadoop#hadoop-aws;3.3.6 in central
+[2024-05-10T20:13:59.295+0000] {ssh.py:500} WARNING - You probably access the destination server through a proxy server that is not well configured.
+[2024-05-10T20:13:59.301+0000] {ssh.py:500} WARNING - 	found com.amazonaws#aws-java-sdk-bundle;1.12.367 in central
+[2024-05-10T20:14:00.964+0000] {ssh.py:500} WARNING - You probably access the destination server through a proxy server that is not well configured.
+[2024-05-10T20:14:01.304+0000] {ssh.py:500} WARNING - You probably access the destination server through a proxy server that is not well configured.
+[2024-05-10T20:14:01.321+0000] {ssh.py:500} WARNING - 	found org.wildfly.openssl#wildfly-openssl;1.1.3.Final in central
+[2024-05-10T20:14:01.562+0000] {ssh.py:500} WARNING - downloading https://repo1.maven.org/maven2/io/delta/delta-core_2.12/2.4.0/delta-core_2.12-2.4.0.jar ...
+[2024-05-10T20:14:03.308+0000] {ssh.py:500} WARNING - 	[SUCCESSFUL ] io.delta#delta-core_2.12;2.4.0!delta-core_2.12.jar (1970ms)
+[2024-05-10T20:14:03.534+0000] {ssh.py:500} WARNING - downloading https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-aws/3.3.6/hadoop-aws-3.3.6.jar ...
+[2024-05-10T20:14:03.882+0000] {ssh.py:500} WARNING - 	[SUCCESSFUL ] org.apache.hadoop#hadoop-aws;3.3.6!hadoop-aws.jar (573ms)
+[2024-05-10T20:14:04.116+0000] {ssh.py:500} WARNING - downloading https://repo1.maven.org/maven2/io/delta/delta-storage/2.4.0/delta-storage-2.4.0.jar ...
+[2024-05-10T20:14:04.345+0000] {ssh.py:500} WARNING - 	[SUCCESSFUL ] io.delta#delta-storage;2.4.0!delta-storage.jar (462ms)
+[2024-05-10T20:14:04.571+0000] {ssh.py:500} WARNING - downloading https://repo1.maven.org/maven2/org/antlr/antlr4-runtime/4.9.3/antlr4-runtime-4.9.3.jar ...
+[2024-05-10T20:14:04.832+0000] {ssh.py:500} WARNING - 	[SUCCESSFUL ] org.antlr#antlr4-runtime;4.9.3!antlr4-runtime.jar (485ms)
+[2024-05-10T20:14:05.058+0000] {ssh.py:500} WARNING - downloading https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.367/aws-java-sdk-bundle-1.12.367.jar ...
+[2024-05-10T20:15:28.894+0000] {ssh.py:500} WARNING - 	[SUCCESSFUL ] com.amazonaws#aws-java-sdk-bundle;1.12.367!aws-java-sdk-bundle.jar (84060ms)
+[2024-05-10T20:15:29.120+0000] {ssh.py:500} WARNING - downloading https://repo1.maven.org/maven2/org/wildfly/openssl/wildfly-openssl/1.1.3.Final/wildfly-openssl-1.1.3.Final.jar ...
+[2024-05-10T20:15:29.434+0000] {ssh.py:500} WARNING - 	[SUCCESSFUL ] org.wildfly.openssl#wildfly-openssl;1.1.3.Final!wildfly-openssl.jar (538ms)
+[2024-05-10T20:15:29.435+0000] {ssh.py:500} WARNING - :: resolution report :: resolve 18327ms :: artifacts dl 88097ms
+	:: modules in use:
+	com.amazonaws#aws-java-sdk-bundle;1.12.367 from central in [default]
+	io.delta#delta-core_2.12;2.4.0 from central in [default]
+	io.delta#delta-storage;2.4.0 from central in [default]
+	org.antlr#antlr4-runtime;4.9.3 from central in [default]
+	org.apache.hadoop#hadoop-aws;3.3.6 from central in [default]
+	org.wildfly.openssl#wildfly-openssl;1.1.3.Final from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+[2024-05-10T20:15:29.436+0000] {ssh.py:500} WARNING - 	|      default     |   6   |   6   |   6   |   0   ||   6   |   6   |
+	---------------------------------------------------------------------
+[2024-05-10T20:15:29.440+0000] {ssh.py:500} WARNING - :: problems summary ::
+:::: WARNINGS
+[2024-05-10T20:15:29.440+0000] {ssh.py:500} WARNING - 	Host repos.spark-packages.org not found. url=https://repos.spark-packages.org/org/sonatype/oss/oss-parent/9/oss-parent-9.jar
+
+	Host repos.spark-packages.org not found. url=https://repos.spark-packages.org/org/antlr/antlr4-master/4.9.3/antlr4-master-4.9.3.jar
+
+	Host repos.spark-packages.org not found. url=https://repos.spark-packages.org/org/apache/hadoop/hadoop-main/3.3.6/hadoop-main-3.3.6.jar
+
+	Host repos.spark-packages.org not found. url=https://repos.spark-packages.org/org/apache/hadoop/hadoop-project/3.3.6/hadoop-project-3.3.6.jar
+
+	Host repos.spark-packages.org not found. url=https://repos.spark-packages.org/com/amazonaws/aws-java-sdk-pom/1.12.367/aws-java-sdk-pom-1.12.367.jar
+
+	Host repos.spark-packages.org not found. url=https://repos.spark-packages.org/org/jboss/jboss-parent/35/jboss-parent-35.jar
+
+	Host repos.spark-packages.org not found. url=https://repos.spark-packages.org/org/wildfly/openssl/wildfly-openssl-parent/1.1.3.Final/wildfly-openssl-parent-1.1.3.Final.jar
+
+
+:: USE VERBOSE OR DEBUG MESSAGE LEVEL FOR MORE DETAILS
+:: retrieving :: org.apache.spark#spark-submit-parent-4457b6d1-bf9c-435e-8857-4b830610fcea
+	confs: [default]
+[2024-05-10T20:15:29.660+0000] {ssh.py:500} WARNING - 	6 artifacts copied, 0 already retrieved (309034kB/220ms)
+[2024-05-10T20:15:29.866+0000] {ssh.py:500} WARNING - 24/05/10 20:15:29 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2024-05-10T20:15:31.057+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SparkContext: Running Spark version 3.4.1
+[2024-05-10T20:15:31.081+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO ResourceUtils: ==============================================================
+[2024-05-10T20:15:31.082+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/05/10 20:15:31 INFO ResourceUtils: ==============================================================
+[2024-05-10T20:15:31.082+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SparkContext: Submitted application: SparkAirFlowDemo
+[2024-05-10T20:15:31.105+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 2, script: , vendor: , memory -> name: memory, amount: 4096, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2024-05-10T20:15:31.116+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO ResourceProfile: Limiting resource is cpus at 2 tasks per executor
+[2024-05-10T20:15:31.118+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2024-05-10T20:15:31.184+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SecurityManager: Changing view acls to: spark_user
+[2024-05-10T20:15:31.185+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SecurityManager: Changing modify acls to: spark_user
+24/05/10 20:15:31 INFO SecurityManager: Changing view acls groups to: 
+[2024-05-10T20:15:31.186+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SecurityManager: Changing modify acls groups to: 
+[2024-05-10T20:15:31.187+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: spark_user; groups with view permissions: EMPTY; users with modify permissions: spark_user; groups with modify permissions: EMPTY
+[2024-05-10T20:15:31.388+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO Utils: Successfully started service 'sparkDriver' on port 40681.
+[2024-05-10T20:15:31.426+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SparkEnv: Registering MapOutputTracker
+[2024-05-10T20:15:31.467+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SparkEnv: Registering BlockManagerMaster
+[2024-05-10T20:15:31.486+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2024-05-10T20:15:31.487+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2024-05-10T20:15:31.492+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2024-05-10T20:15:31.512+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-e4fe3749-eebe-4fee-8d67-962ec2380cee
+[2024-05-10T20:15:31.532+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+[2024-05-10T20:15:31.548+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SparkEnv: Registering OutputCommitCoordinator
+[2024-05-10T20:15:31.682+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+[2024-05-10T20:15:31.751+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2024-05-10T20:15:31.791+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SparkContext: Added JAR file:///home/spark_user/.ivy2/jars/io.delta_delta-core_2.12-2.4.0.jar at spark://6d1eba0ddcab:40681/jars/io.delta_delta-core_2.12-2.4.0.jar with timestamp 1715372131050
+[2024-05-10T20:15:31.792+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SparkContext: Added JAR file:///home/spark_user/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.6.jar at spark://6d1eba0ddcab:40681/jars/org.apache.hadoop_hadoop-aws-3.3.6.jar with timestamp 1715372131050
+24/05/10 20:15:31 INFO SparkContext: Added JAR file:///home/spark_user/.ivy2/jars/io.delta_delta-storage-2.4.0.jar at spark://6d1eba0ddcab:40681/jars/io.delta_delta-storage-2.4.0.jar with timestamp 1715372131050
+[2024-05-10T20:15:31.793+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SparkContext: Added JAR file:///home/spark_user/.ivy2/jars/org.antlr_antlr4-runtime-4.9.3.jar at spark://6d1eba0ddcab:40681/jars/org.antlr_antlr4-runtime-4.9.3.jar with timestamp 1715372131050
+24/05/10 20:15:31 INFO SparkContext: Added JAR file:///home/spark_user/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar at spark://6d1eba0ddcab:40681/jars/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar with timestamp 1715372131050
+24/05/10 20:15:31 INFO SparkContext: Added JAR file:///home/spark_user/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar at spark://6d1eba0ddcab:40681/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar with timestamp 1715372131050
+[2024-05-10T20:15:31.795+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SparkContext: Added file file:///home/spark_user/.ivy2/jars/io.delta_delta-core_2.12-2.4.0.jar at spark://6d1eba0ddcab:40681/files/io.delta_delta-core_2.12-2.4.0.jar with timestamp 1715372131050
+[2024-05-10T20:15:31.796+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO Utils: Copying /home/spark_user/.ivy2/jars/io.delta_delta-core_2.12-2.4.0.jar to /tmp/spark-952b04ff-6dee-435b-945a-f5766defeaf4/userFiles-e4f7cb60-3a39-4e07-b02e-9dcaacd8b9e6/io.delta_delta-core_2.12-2.4.0.jar
+[2024-05-10T20:15:31.809+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SparkContext: Added file file:///home/spark_user/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.6.jar at spark://6d1eba0ddcab:40681/files/org.apache.hadoop_hadoop-aws-3.3.6.jar with timestamp 1715372131050
+[2024-05-10T20:15:31.814+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO Utils: Copying /home/spark_user/.ivy2/jars/org.apache.hadoop_hadoop-aws-3.3.6.jar to /tmp/spark-952b04ff-6dee-435b-945a-f5766defeaf4/userFiles-e4f7cb60-3a39-4e07-b02e-9dcaacd8b9e6/org.apache.hadoop_hadoop-aws-3.3.6.jar
+[2024-05-10T20:15:31.815+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SparkContext: Added file file:///home/spark_user/.ivy2/jars/io.delta_delta-storage-2.4.0.jar at spark://6d1eba0ddcab:40681/files/io.delta_delta-storage-2.4.0.jar with timestamp 1715372131050
+24/05/10 20:15:31 INFO Utils: Copying /home/spark_user/.ivy2/jars/io.delta_delta-storage-2.4.0.jar to /tmp/spark-952b04ff-6dee-435b-945a-f5766defeaf4/userFiles-e4f7cb60-3a39-4e07-b02e-9dcaacd8b9e6/io.delta_delta-storage-2.4.0.jar
+[2024-05-10T20:15:31.820+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SparkContext: Added file file:///home/spark_user/.ivy2/jars/org.antlr_antlr4-runtime-4.9.3.jar at spark://6d1eba0ddcab:40681/files/org.antlr_antlr4-runtime-4.9.3.jar with timestamp 1715372131050
+24/05/10 20:15:31 INFO Utils: Copying /home/spark_user/.ivy2/jars/org.antlr_antlr4-runtime-4.9.3.jar to /tmp/spark-952b04ff-6dee-435b-945a-f5766defeaf4/userFiles-e4f7cb60-3a39-4e07-b02e-9dcaacd8b9e6/org.antlr_antlr4-runtime-4.9.3.jar
+[2024-05-10T20:15:31.825+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO SparkContext: Added file file:///home/spark_user/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar at spark://6d1eba0ddcab:40681/files/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar with timestamp 1715372131050
+[2024-05-10T20:15:31.830+0000] {ssh.py:500} WARNING - 24/05/10 20:15:31 INFO Utils: Copying /home/spark_user/.ivy2/jars/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar to /tmp/spark-952b04ff-6dee-435b-945a-f5766defeaf4/userFiles-e4f7cb60-3a39-4e07-b02e-9dcaacd8b9e6/com.amazonaws_aws-java-sdk-bundle-1.12.367.jar
+[2024-05-10T20:15:32.009+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO SparkContext: Added file file:///home/spark_user/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar at spark://6d1eba0ddcab:40681/files/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar with timestamp 1715372131050
+[2024-05-10T20:15:32.010+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO Utils: Copying /home/spark_user/.ivy2/jars/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar to /tmp/spark-952b04ff-6dee-435b-945a-f5766defeaf4/userFiles-e4f7cb60-3a39-4e07-b02e-9dcaacd8b9e6/org.wildfly.openssl_wildfly-openssl-1.1.3.Final.jar
+[2024-05-10T20:15:32.125+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark:7077...
+[2024-05-10T20:15:32.184+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO TransportClientFactory: Successfully created connection to spark/172.19.0.3:7077 after 37 ms (0 ms spent in bootstraps)
+[2024-05-10T20:15:32.358+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20240510201532-0000
+[2024-05-10T20:15:32.366+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 33331.
+[2024-05-10T20:15:32.368+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO NettyBlockTransferService: Server created on 6d1eba0ddcab:33331
+[2024-05-10T20:15:32.373+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2024-05-10T20:15:32.393+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 6d1eba0ddcab, 33331, None)
+[2024-05-10T20:15:32.396+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240510201532-0000/0 on worker-20240510201232-172.19.0.5-46023 (172.19.0.5:46023) with 2 core(s)
+[2024-05-10T20:15:32.400+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO StandaloneSchedulerBackend: Granted executor ID app-20240510201532-0000/0 on hostPort 172.19.0.5:46023 with 2 core(s), 4.0 GiB RAM
+24/05/10 20:15:32 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240510201532-0000/1 on worker-20240510201232-172.19.0.9-46349 (172.19.0.9:46349) with 2 core(s)
+[2024-05-10T20:15:32.405+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO StandaloneSchedulerBackend: Granted executor ID app-20240510201532-0000/1 on hostPort 172.19.0.9:46349 with 2 core(s), 4.0 GiB RAM
+24/05/10 20:15:32 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240510201532-0000/2 on worker-20240510201232-172.19.0.7-36729 (172.19.0.7:36729) with 2 core(s)
+24/05/10 20:15:32 INFO StandaloneSchedulerBackend: Granted executor ID app-20240510201532-0000/2 on hostPort 172.19.0.7:36729 with 2 core(s), 4.0 GiB RAM
+[2024-05-10T20:15:32.420+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO BlockManagerMasterEndpoint: Registering block manager 6d1eba0ddcab:33331 with 434.4 MiB RAM, BlockManagerId(driver, 6d1eba0ddcab, 33331, None)
+[2024-05-10T20:15:32.429+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 6d1eba0ddcab, 33331, None)
+[2024-05-10T20:15:32.431+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 6d1eba0ddcab, 33331, None)
+[2024-05-10T20:15:32.766+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240510201532-0000/0 is now RUNNING
+24/05/10 20:15:32 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240510201532-0000/1 is now RUNNING
+24/05/10 20:15:32 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240510201532-0000/2 is now RUNNING
+[2024-05-10T20:15:32.798+0000] {ssh.py:500} WARNING - 24/05/10 20:15:32 INFO SingleEventLogFileWriter: Logging events to file:/opt/bitnami/spark/logs/app-20240510201532-0000.inprogress
+[2024-05-10T20:15:33.511+0000] {ssh.py:500} WARNING - 24/05/10 20:15:33 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+[2024-05-10T20:15:43.702+0000] {ssh.py:496} INFO - root
+ |-- firstname: string (nullable = true)
+ |-- middlename: string (nullable = true)
+ |-- lastname: string (nullable = true)
+ |-- id: string (nullable = true)
+ |-- gender: string (nullable = true)
+ |-- salary: integer (nullable = true)
+[2024-05-10T20:15:48.101+0000] {ssh.py:496} INFO - +---------+----------+--------+-----+------+------+
+|firstname|middlename|lastname|id   |gender|salary|
++---------+----------+--------+-----+------+------+
+|James    |          |Smith   |36636|M     |3000  |
+|Michael  |Rose      |        |40288|M     |4000  |
+|Robert   |          |Williams|42114|M     |4000  |
+|Maria    |Anne      |Jones   |39192|F     |4000  |
+|Jen      |Mary      |Brown   |     |F     |-1    |
++---------+----------+--------+-----+------+------+
+[2024-05-10T20:16:06.813+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=pyspark_***_demo_dag, task_id=spark_submit, execution_date=20240510T201338, start_date=20240510T201340, end_date=20240510T201606
+[2024-05-10T20:16:06.842+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-05-10T20:16:06.885+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check

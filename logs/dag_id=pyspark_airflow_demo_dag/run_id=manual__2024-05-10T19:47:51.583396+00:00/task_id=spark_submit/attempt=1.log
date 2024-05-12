@@ -1,0 +1,92 @@
+[2024-05-10T19:48:13.001+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: pyspark_airflow_demo_dag.spark_submit manual__2024-05-10T19:47:51.583396+00:00 [queued]>
+[2024-05-10T19:48:13.012+0000] {taskinstance.py:1171} INFO - Dependencies all met for <TaskInstance: pyspark_airflow_demo_dag.spark_submit manual__2024-05-10T19:47:51.583396+00:00 [queued]>
+[2024-05-10T19:48:13.013+0000] {taskinstance.py:1368} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-10T19:48:13.013+0000] {taskinstance.py:1369} INFO - Starting attempt 1 of 1
+[2024-05-10T19:48:13.014+0000] {taskinstance.py:1370} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-10T19:48:13.030+0000] {taskinstance.py:1389} INFO - Executing <Task(SSHOperator): spark_submit> on 2024-05-10 19:47:51.583396+00:00
+[2024-05-10T19:48:13.034+0000] {standard_task_runner.py:52} INFO - Started process 335 to run task
+[2024-05-10T19:48:13.038+0000] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'pyspark_***_demo_dag', 'spark_submit', 'manual__2024-05-10T19:47:51.583396+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/insert_data.py', '--cfg-path', '/tmp/tmpbn3_93sh', '--error-file', '/tmp/tmpt2dpetn8']
+[2024-05-10T19:48:13.039+0000] {standard_task_runner.py:80} INFO - Job 9: Subtask spark_submit
+[2024-05-10T19:48:13.111+0000] {task_command.py:371} INFO - Running <TaskInstance: pyspark_airflow_demo_dag.spark_submit manual__2024-05-10T19:47:51.583396+00:00 [running]> on host b5bbd48d15dd
+[2024-05-10T19:48:13.198+0000] {taskinstance.py:1583} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=pyspark_***_demo_dag
+AIRFLOW_CTX_TASK_ID=spark_submit
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-10T19:47:51.583396+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-05-10T19:47:51.583396+00:00
+[2024-05-10T19:48:13.198+0000] {ssh.py:136} INFO - Creating ssh_client
+[2024-05-10T19:48:13.366+0000] {ssh.py:114} INFO - ssh_hook is not provided or invalid. Trying ssh_conn_id to create SSHHook.
+[2024-05-10T19:48:13.377+0000] {base.py:68} INFO - Using connection ID 'ssh_spark' for task execution.
+[2024-05-10T19:48:13.377+0000] {ssh.py:287} WARNING - No Host Key Verification. This won't protect against Man-In-The-Middle attacks
+[2024-05-10T19:48:13.392+0000] {transport.py:1874} INFO - Connected (version 2.0, client OpenSSH_8.4p1)
+[2024-05-10T19:48:13.449+0000] {transport.py:1874} INFO - Authentication (publickey) failed.
+[2024-05-10T19:48:13.498+0000] {transport.py:1874} INFO - Authentication (password) successful!
+[2024-05-10T19:48:13.498+0000] {ssh.py:464} INFO - Running command: . /home/spark_user/docker_env.txt && spark-submit             --master spark://spark:7077             --deploy-mode client             --executor-memory 4g             --executor-cores 2             --driver-cores 1            --driver-memory 1g             /opt/bitnami/spark/dev/scripts/pyspark_trial.py
+            
+[2024-05-10T19:48:15.998+0000] {ssh.py:496} INFO - 24/05/10 19:48:15 INFO SparkContext: Running Spark version 3.3.0
+[2024-05-10T19:48:16.076+0000] {ssh.py:496} INFO - 24/05/10 19:48:16 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+[2024-05-10T19:48:16.182+0000] {ssh.py:496} INFO - 24/05/10 19:48:16 INFO ResourceUtils: ==============================================================
+24/05/10 19:48:16 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/05/10 19:48:16 INFO ResourceUtils: ==============================================================
+24/05/10 19:48:16 INFO SparkContext: Submitted application: SparkAirFlowDemo
+[2024-05-10T19:48:16.209+0000] {ssh.py:496} INFO - 24/05/10 19:48:16 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 2, script: , vendor: , memory -> name: memory, amount: 4096, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+[2024-05-10T19:48:16.227+0000] {ssh.py:496} INFO - 24/05/10 19:48:16 INFO ResourceProfile: Limiting resource is cpus at 2 tasks per executor
+[2024-05-10T19:48:16.229+0000] {ssh.py:496} INFO - 24/05/10 19:48:16 INFO ResourceProfileManager: Added ResourceProfile id: 0
+[2024-05-10T19:48:16.304+0000] {ssh.py:496} INFO - 24/05/10 19:48:16 INFO SecurityManager: Changing view acls to: spark_user
+24/05/10 19:48:16 INFO SecurityManager: Changing modify acls to: spark_user
+24/05/10 19:48:16 INFO SecurityManager: Changing view acls groups to: 
+24/05/10 19:48:16 INFO SecurityManager: Changing modify acls groups to: 
+24/05/10 19:48:16 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(spark_user); groups with view permissions: Set(); users  with modify permissions: Set(spark_user); groups with modify permissions: Set()
+[2024-05-10T19:48:16.613+0000] {ssh.py:496} INFO - 24/05/10 19:48:16 INFO Utils: Successfully started service 'sparkDriver' on port 33891.
+[2024-05-10T19:48:16.651+0000] {ssh.py:496} INFO - 24/05/10 19:48:16 INFO SparkEnv: Registering MapOutputTracker
+[2024-05-10T19:48:16.700+0000] {ssh.py:496} INFO - 24/05/10 19:48:16 INFO SparkEnv: Registering BlockManagerMaster
+[2024-05-10T19:48:16.726+0000] {ssh.py:496} INFO - 24/05/10 19:48:16 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+[2024-05-10T19:48:16.727+0000] {ssh.py:496} INFO - 24/05/10 19:48:16 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+[2024-05-10T19:48:16.732+0000] {ssh.py:496} INFO - 24/05/10 19:48:16 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+[2024-05-10T19:48:16.761+0000] {ssh.py:496} INFO - 24/05/10 19:48:16 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-8cb35d49-46c4-4eee-b6b4-33a7b1d02f3a
+[2024-05-10T19:48:16.839+0000] {ssh.py:496} INFO - 24/05/10 19:48:16 INFO MemoryStore: MemoryStore started with capacity 366.3 MiB
+[2024-05-10T19:48:16.860+0000] {ssh.py:496} INFO - 24/05/10 19:48:16 INFO SparkEnv: Registering OutputCommitCoordinator
+[2024-05-10T19:48:17.108+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+[2024-05-10T19:48:17.247+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO StandaloneAppClient$ClientEndpoint: Connecting to master spark://spark:7077...
+[2024-05-10T19:48:17.295+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO TransportClientFactory: Successfully created connection to spark/172.19.0.3:7077 after 28 ms (0 ms spent in bootstraps)
+[2024-05-10T19:48:17.385+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO StandaloneSchedulerBackend: Connected to Spark cluster with app ID app-20240510194817-0001
+[2024-05-10T19:48:17.396+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240510194817-0001/0 on worker-20240510194514-172.19.0.4-45201 (172.19.0.4:45201) with 2 core(s)
+24/05/10 19:48:17 INFO StandaloneSchedulerBackend: Granted executor ID app-20240510194817-0001/0 on hostPort 172.19.0.4:45201 with 2 core(s), 4.0 GiB RAM
+24/05/10 19:48:17 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240510194817-0001/1 on worker-20240510194515-172.19.0.5-36755 (172.19.0.5:36755) with 2 core(s)
+[2024-05-10T19:48:17.407+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO StandaloneSchedulerBackend: Granted executor ID app-20240510194817-0001/1 on hostPort 172.19.0.5:36755 with 2 core(s), 4.0 GiB RAM
+24/05/10 19:48:17 INFO StandaloneAppClient$ClientEndpoint: Executor added: app-20240510194817-0001/2 on worker-20240510194515-172.19.0.7-44873 (172.19.0.7:44873) with 2 core(s)
+[2024-05-10T19:48:17.408+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO StandaloneSchedulerBackend: Granted executor ID app-20240510194817-0001/2 on hostPort 172.19.0.7:44873 with 2 core(s), 4.0 GiB RAM
+[2024-05-10T19:48:17.413+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 36153.
+[2024-05-10T19:48:17.414+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO NettyBlockTransferService: Server created on 2532e8d7c48e:36153
+[2024-05-10T19:48:17.420+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+[2024-05-10T19:48:17.451+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240510194817-0001/1 is now RUNNING
+[2024-05-10T19:48:17.457+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240510194817-0001/2 is now RUNNING
+[2024-05-10T19:48:17.461+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 2532e8d7c48e, 36153, None)
+[2024-05-10T19:48:17.467+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO StandaloneAppClient$ClientEndpoint: Executor updated: app-20240510194817-0001/0 is now RUNNING
+[2024-05-10T19:48:17.474+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO BlockManagerMasterEndpoint: Registering block manager 2532e8d7c48e:36153 with 366.3 MiB RAM, BlockManagerId(driver, 2532e8d7c48e, 36153, None)
+[2024-05-10T19:48:17.478+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 2532e8d7c48e, 36153, None)
+[2024-05-10T19:48:17.481+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, 2532e8d7c48e, 36153, None)
+[2024-05-10T19:48:17.921+0000] {ssh.py:496} INFO - 24/05/10 19:48:17 INFO SingleEventLogFileWriter: Logging events to file:/opt/bitnami/spark/logs/app-20240510194817-0001.inprogress
+[2024-05-10T19:48:18.362+0000] {ssh.py:496} INFO - 24/05/10 19:48:18 INFO StandaloneSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+[2024-05-10T19:48:22.912+0000] {ssh.py:496} INFO - root
+ |-- firstname: string (nullable = true)
+ |-- middlename: string (nullable = true)
+ |-- lastname: string (nullable = true)
+ |-- id: string (nullable = true)
+ |-- gender: string (nullable = true)
+ |-- salary: integer (nullable = true)
+[2024-05-10T19:48:26.001+0000] {ssh.py:496} INFO - +---------+----------+--------+-----+------+------+
+|firstname|middlename|lastname|id   |gender|salary|
++---------+----------+--------+-----+------+------+
+|James    |          |Smith   |36636|M     |3000  |
+|Michael  |Rose      |        |40288|M     |4000  |
+|Robert   |          |Williams|42114|M     |4000  |
+|Maria    |Anne      |Jones   |39192|F     |4000  |
+|Jen      |Mary      |Brown   |     |F     |-1    |
++---------+----------+--------+-----+------+------+
+[2024-05-10T19:48:26.225+0000] {taskinstance.py:1412} INFO - Marking task as SUCCESS. dag_id=pyspark_***_demo_dag, task_id=spark_submit, execution_date=20240510T194751, start_date=20240510T194813, end_date=20240510T194826
+[2024-05-10T19:48:26.263+0000] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-05-10T19:48:26.294+0000] {local_task_job.py:279} INFO - 1 downstream tasks scheduled from follow-on schedule check
