@@ -17,8 +17,8 @@ jobs:
         pip install wheel        
     - name: Build Python Package
       run: |
-        python3 $GITHUB_WORKSPACE/gedq/setup.py sdist bdist_wheel
-        python3 $GITHUB_WORKSPACE/spark/setup.py sdist bdist_wheel
+        python3 $GITHUB_WORKSPACE/gedq/setup.py sdist bdist_egg
+        python3 $GITHUB_WORKSPACE/spark/setup.py sdist bdist_egg
         mkdir ./whlpkg
         cp -r $GITHUB_WORKSPACE/dist ./whlpkg
         cp -r $GITHUB_WORKSPACE/dist/ ./whlpkg        
@@ -53,8 +53,6 @@ jobs:
         docker cp ./whlpkg/. airflow-spark-spark-1:/opt/bitnami/spark
         docker cp ./whlpkg/. airflow-spark-spark-worker-1:/opt/bitnami/spark
         docker cp ./whlpkg/. airflow-spark-spark-worker-2:/opt/bitnami/spark
-        docker exec airflow-spark-spark-worker-2 /opt/bitnami/spark/dist/gedq-0.1-py3-none-any.whl
-        docker exec airflow-spark-spark-worker-2 /opt/bitnami/spark/dist/lakehouse-0.1-py3-none-any.whl
         docker cp ./whlpkg/. airflow-spark-spark-worker-3:/opt/bitnami/spark
     # - name: Install Whls to Spark Cluster 
     #   run: |
