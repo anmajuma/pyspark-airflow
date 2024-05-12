@@ -12,12 +12,12 @@ jobs:
     #     python-version: 3.8
     - name: Install Requirements
       run: |
-        python -m pip install --upgrade pip
-        python -m pip install setuptools
-        python -m pip install wheel        
+        python3.8 -m pip install --upgrade pip
+        python3.8 -m pip install setuptools
+        python3.8 -m pip install wheel        
     - name: Build Python Package
       run: |
-        python ./spark/setup.py sdist bdist_wheel
+        python3.8 ./spark/setup.py sdist bdist_wheel
         mkdir ./whlpkg
         cp -r ./dist/ ./whlpkg        
     - name: Temporarily save Whl Package
