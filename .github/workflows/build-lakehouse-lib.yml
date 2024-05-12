@@ -2,7 +2,7 @@
 name: Pyspark LakeHouse Lib Build 
 on: workflow_dispatch
 jobs:
-  whl-builder:
+  module-copy:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v1
@@ -10,9 +10,22 @@ jobs:
     #   uses: actions/setup-python@v1
     #   with:
     #     python-version: 3.8
-    - name: Copy Modules to Spark Cluster 
+    - name: Copy Lakehouse Modules to Spark Cluster 
       run: |
         docker cp ./spark/. airflow-spark-spark-1:/opt/bitnami/spark/python
         docker cp ./spark/. airflow-spark-spark-worker-1:/opt/bitnami/spark/python
         docker cp ./spark/. airflow-spark-spark-worker-2:/opt/bitnami/spark/python
         docker cp ./spark/. airflow-spark-spark-worker-3:/opt/bitnami/spark/python
+
+    - name: Copy DataQuality Modules to Spark Cluster 
+      run: |
+          docker cp ./gedq/. airflow-spark-spark-1:/opt/bitnami/spark/python
+          docker cp ./gedq/. airflow-spark-spark-worker-1:/opt/bitnami/spark/python
+          docker cp ./gedq/. airflow-spark-spark-worker-2:/opt/bitnami/spark/python
+          docker cp ./gedq/. airflow-spark-spark-worker-3:/opt/bitnami/spark/python
+    - name: Install Great Expectation to Spark Cluster 
+      run: |
+          docker exec --user root airflow-spark-spark-1 python -m pip install great-expectations
+          docker exec --user root airflow-spark-spark-worker-1 python -m pip install great-expectations
+          docker exec --user root airflow-spark-spark-worker-2 python -m pip install great-expectations
+          docker exec --user root airflow-spark-spark-worker-3 python -m pip install great-expectations
