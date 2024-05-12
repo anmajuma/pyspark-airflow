@@ -17,9 +17,9 @@ jobs:
         python3.8 -m pip install wheel        
     - name: Build Python Package
       run: |
-        python3.8 $GITHUB_WORKSPACE/spark/setup.py sdist bdist_wheel
+        python3.8 ./spark/setup.py sdist bdist_wheel
         mkdir ./whlpkg
-        cp -r $GITHUB_WORKSPACE/dist/ ./whlpkg        
+        cp -r ./dist/ ./whlpkg        
     - name: Temporarily save Whl Package
       uses: actions/upload-artifact@v4
       with:
