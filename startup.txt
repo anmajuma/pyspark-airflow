@@ -2,6 +2,6 @@ docker network create --driver bridge airflow_spark_network
 docker compose up airflow-init
 docker compose up --scale spark-worker=3 -d
 
-docker-compose down
-docker-compose up airflow-init
-docker-compose up --scale spark-worker=3 -d
+docker compose down
+docker compose up airflow-init
+docker compose up --scale spark-worker=3 -d
