@@ -1,4 +1,5 @@
-import pandas as pd
+import sys 
+sys.path.append('/opt/bitnami/spark/python')
 from lakehouse.utils import sparkSessionBuilder ,jobTaskIDGen , auditlog
 from lakehouse.tasks import src2landing ,removeduplicate,schemaenforcement,dataqcheck,stagecleanseddata,loadsilvertable
 
