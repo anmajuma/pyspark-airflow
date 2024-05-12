@@ -36,6 +36,7 @@ with DAG(
             --executor-cores 2 \
             --driver-cores 1\
             --driver-memory 1g \
+            --py-files /opt/bitnami/spark/dist/lakehouse-0.1-py3-none-any.whl
             /opt/bitnami/spark/dev/scripts/driver.py
             '''
     )
